@@ -6,12 +6,17 @@ function App() {
 
   return (
     <>
-	<p>Hello</p>
-	      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+      <p className="text-2xl font-bold text-blue-600 underline">Hello, Tailwind!</p>
+      
+      <div className="card bg-green-200 p-4 rounded shadow-md">
+        <button 
+          onClick={() => setCount((count) => count + 1)} 
+          className="bg-blue-500 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700"
+        >
           count is {count}
         </button>
       </div>
+
       {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
