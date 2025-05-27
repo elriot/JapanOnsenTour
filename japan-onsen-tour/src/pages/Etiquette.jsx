@@ -10,7 +10,7 @@ function Etiquette({className=""}){
 	return (
 		<Section className={className}>
 			<ResponsiveRow>
-				<ResponsiveRowImage src={noren} alt="Noren sign"/>
+				<ResponsiveRowImage src={noren} alt="Noren sign" className="object-contain"/>
 				<ResponsiveRowText>
 					<Section>
 						<Heading2 className="text-center">Onsen Etiquette</Heading2>
