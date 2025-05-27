@@ -8,11 +8,11 @@ import noren from "../images/noren.jpg";
 function Etiquette({className=""}){
 
 	return (
-		<Section className={className}>
+		<Section className={className} paddingTop="false">
 			<ResponsiveRow>
 				<ResponsiveRowImage src={noren} alt="Noren sign" className="object-contain"/>
 				<ResponsiveRowText>
-					<Section>
+					<Section paddingTop="false">
 						<Heading2 className="text-center">Onsen Etiquette</Heading2>
 						<p className="mb-4">
 							If you’re familiar with North American hot springs, there are a few important differences to keep in mind when visiting an onsen in Japan.

@@ -1,6 +1,9 @@
-function Section({children, className=""}){
+function Section({children, className="", paddingTop = "true", paddingBottom = "true"}){
+	// const topPadding = paddingTop === "true" ? "pt-20" : "";
+	const topPadding = paddingTop === "true" ? "pt-20" : "";
+	const bottomPadding = paddingBottom === "true" ? "pb-20" : "";
 	return (
-		<section className={`p-8 pt-20 pb-20 ${className}`}>
+		<section className={`p-8 ${bottomPadding} ${topPadding} ${className}`}>
 			{children}
 		</section>
 	);
