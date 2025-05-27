@@ -2,6 +2,8 @@ import onsenImg from "../images/onsen_01.jpg";
 import onsenImg2 from "../images/onsen_02.jpg";
 import Heading2 from "../components/Heading2";
 import Section from "../components/Section";
+import ResponsiveRow from "../components/ResponsiveRow";
+import ResponsiveRowImage from "../components/ResoponsiveRowImage";
 
 function WhatIsOnsen({className = ""}) {
 	
@@ -34,10 +36,10 @@ function WhatIsOnsen({className = ""}) {
 				</p>
 			</div>
 
-			<div className="flex flex-col md:flex-row gap-4 mb-4">
-				<img src={onsenImg} alt="Onsen" className="w-full md:w-1/2 h-auto" />
-				<img src={onsenImg2} alt="Onsen" className="w-full md:w-1/2 h-auto" />
-			</div>
+			<ResponsiveRow>
+				<ResponsiveRowImage src={onsenImg} alt="Outside Onsen"/>
+				<ResponsiveRowImage src={onsenImg2} alt="Public inside Onsen"/>
+			</ResponsiveRow>
 		</Section>
 	);
 }
