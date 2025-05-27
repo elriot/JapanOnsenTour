@@ -6,6 +6,7 @@ import BeforeYouGo from "./pages/BeforeYouGo";
 import Etiquette from "./pages/Etiquette";
 import Tattoo from "./pages/Tattoo";
 import RyokanHotel from "./pages/RyokanHotel";
+import PackingEssensial from "./pages/PackingEssensial";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
 		<Etiquette className="bg-odd"/>
 		<Tattoo className="bg-even"/>
 		<RyokanHotel className="bg-odd"/>
+		<PackingEssensial className="even"/>
     </>
   );
 }
