@@ -15,11 +15,7 @@ function App() {
   return (
     <>
 		<Router basename="/JapanOnsenTour">
-			<header className="p-4 bg-gray-100 flex gap-4">
-				<Link to="/">Home</Link>
-				<Link to="/onsen">What is Onsen</Link>
-				<Link to="/health">Health Benefits</Link>
-			</header>
+			<Header/>
 
 			<Routes>
 				<Route path="/" element={<Main />} />
