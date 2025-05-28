@@ -21,6 +21,11 @@ function App() {
 				<Route path="/" element={<Main />} />
 				<Route path="/onsen" element={<WhatIsOnsen />} />
 				<Route path="/health" element={<HealthBenefit />} />
+
+				<Route path="/etiquette" element={<Etiquette />} />
+				<Route path="/tattoo" element={<Tattoo />} />
+				<Route path="/accomodation" element={<RyokanHotel />} />
+				<Route path="/packing" element={<PackingEssensial />} />
 			</Routes>
 		</Router>
 		{/* <Header/>

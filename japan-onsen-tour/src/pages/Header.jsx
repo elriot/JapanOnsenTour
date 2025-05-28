@@ -49,6 +49,26 @@ function Navbar() {
 								]} />
 							}
             			</li>
+						<li className="relative">
+							<button
+								onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+								className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+							>
+								Before You Go
+								<svg className="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+									<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+								</svg>
+							</button>
+
+							{isDropdownOpen && 
+								<DropdownMenu items={[
+									{ to: '/etiquette', label: 'Onsen Etiquette' },
+									{ to: '/tattoo', label: 'Things to Know About Tattoos' },
+									{ to: '/accomodation', label: 'Hotel & Ryokan Types' },
+									{ to: '/packing', label: 'Packing Essentials' },
+								]} />
+							}
+            			</li>
 						{/* Onsen 101 menu Done */}
 
 					</ul>
