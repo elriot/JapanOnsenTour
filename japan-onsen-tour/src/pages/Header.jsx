@@ -29,7 +29,7 @@ function Navbar() {
 
 				{/* Menu */}
 				<div className={`${isMobileMenuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto `} id="navbar-dropdown">
-					<ul className="flex flex-col font-medium header-menu-item-bg p-4 md:p-0 mt-4 border border-gray-300 rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
+					<ul className="flex flex-col font-medium header-menu-item-bg p-2 md:p-0 mt-4 border border-gray-300 rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
 						<li>
 							<NavbarMenuItem 
 								to="/" 
@@ -85,6 +85,28 @@ function Navbar() {
 							}
             			</li>
 
+						<li className="relative">
+							<button
+								onClick={() => toggleMenu('topThreeTown')}
+								className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded header-menu-item-hover md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+							>
+								Top 3 Onsen Town
+								<svg className="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+									<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+								</svg>
+							</button>
+
+							{openMenu == 'topThreeTown' && 
+								<DropdownMenu items={[
+										{ to: '/kusatsu', label: 'Kusatsu Onsen' },
+										{ to: '/arima', label: 'Arima Onsen' },
+										{ to: '/gero', label: 'Gero Onsen' },
+									]}
+									onLinkClick={() => {setOpenMenu(null); setIsMobileMenuOpen(false);}}
+									className="header-menu-item-hover"  
+								/>
+							}
+            			</li>
 					</ul>
 				</div>
 			</div>
