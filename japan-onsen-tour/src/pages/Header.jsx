@@ -31,7 +31,7 @@ function Navbar() {
 				<div className={`${isMobileMenuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto `} id="navbar-dropdown">
 					<ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-300 rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
 						<li>
-							<NavbarMenuItem to="/" label="Home"/>
+							<NavbarMenuItem to="/" label="Home" onLinkClick={() => setOpenMenu(null)}/>
 						</li>
 
 						{/* Onsen 101 - subs : [ What is Onsen, Health Benefit ]  */}
@@ -50,7 +50,9 @@ function Navbar() {
 								<DropdownMenu items={[
 									{ to: '/onsen', label: 'What is Onsen?' },
 									{ to: '/health', label: 'Health Benefit' }
-								]} />
+									]}
+									onLinkClick={() => setOpenMenu(null)}  
+								/>
 							}
             			</li>
 						<li className="relative">
@@ -66,11 +68,13 @@ function Navbar() {
 
 							{openMenu == 'beforeYouGo' && 
 								<DropdownMenu items={[
-									{ to: '/etiquette', label: 'Onsen Etiquette' },
-									{ to: '/tattoo', label: 'Things to Know About Tattoos' },
-									{ to: '/accomodation', label: 'Hotel & Ryokan Types' },
-									{ to: '/packing', label: 'Packing Essentials' },
-								]} />
+										{ to: '/etiquette', label: 'Onsen Etiquette' },
+										{ to: '/tattoo', label: 'Things to Know About Tattoos' },
+										{ to: '/accomodation', label: 'Hotel & Ryokan Types' },
+										{ to: '/packing', label: 'Packing Essentials' },
+									]}
+									onLinkClick={() => setOpenMenu(null)}  
+								/>
 							}
             			</li>
 
