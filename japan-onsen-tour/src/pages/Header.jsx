@@ -14,7 +14,7 @@ function Navbar() {
 	};
 
 	return (
-		<nav className="bg-white fixed w-full z-50">
+		<nav className="header-bg fixed w-full z-50">
 			<div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
 
 				{/* Title */}
@@ -29,16 +29,21 @@ function Navbar() {
 
 				{/* Menu */}
 				<div className={`${isMobileMenuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto `} id="navbar-dropdown">
-					<ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-300 rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
+					<ul className="flex flex-col font-medium header-menu-item-bg p-4 md:p-0 mt-4 border border-gray-300 rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
 						<li>
-							<NavbarMenuItem to="/" label="Home" onLinkClick={() => setOpenMenu(null)}/>
+							<NavbarMenuItem 
+								to="/" 
+								label="Home" 
+								className="header-menu-item-hover"
+								onLinkClick={() => {setOpenMenu(null); setIsMobileMenuOpen(false);}
+							}/>
 						</li>
 
 						{/* Onsen 101 - subs : [ What is Onsen, Health Benefit ]  */}
 						<li className="relative">
 							<button
 								onClick={() => toggleMenu('onsen')}
-								className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+								className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded header-menu-item-hover md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
 							>
 								Onsen 101
 								<svg className="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -51,14 +56,15 @@ function Navbar() {
 									{ to: '/onsen', label: 'What is Onsen?' },
 									{ to: '/health', label: 'Health Benefit' }
 									]}
-									onLinkClick={() => setOpenMenu(null)}  
+									onLinkClick={() => {setOpenMenu(null); setIsMobileMenuOpen(false);}}
+									className="header-menu-item-hover"
 								/>
 							}
             			</li>
 						<li className="relative">
 							<button
 								onClick={() => toggleMenu('beforeYouGo')}
-								className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+								className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded header-menu-item-hover md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
 							>
 								Before You Go
 								<svg className="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
@@ -73,7 +79,8 @@ function Navbar() {
 										{ to: '/accomodation', label: 'Hotel & Ryokan Types' },
 										{ to: '/packing', label: 'Packing Essentials' },
 									]}
-									onLinkClick={() => setOpenMenu(null)}  
+									onLinkClick={() => {setOpenMenu(null); setIsMobileMenuOpen(false);}}
+									className="header-menu-item-hover"  
 								/>
 							}
             			</li>

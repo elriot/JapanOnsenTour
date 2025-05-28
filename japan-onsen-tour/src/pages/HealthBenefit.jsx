@@ -4,8 +4,8 @@ import Section from "../components/Section";
 
 function HealthBenefit({className=""}) {
   return (
-		<Section className={className}>
-			<ResponsiveRow>
+		<Section className={`${className}`}>
+			<ResponsiveRow className="page-top-content">
 				<Heading2 className="md:w-1/2">Health Benefit Of Onsen</Heading2>
 				<div className="md:w-1/2">
 					<p className="mb-4">

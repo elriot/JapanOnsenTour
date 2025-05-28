@@ -8,9 +8,8 @@ import noren from "../images/noren.jpg";
 function Etiquette({className=""}){
 
 	return (
-		<Section className={className} paddingTop="false">
-			<ResponsiveRow>
-				<ResponsiveRowImage src={noren} alt="Noren sign" className="object-contain"/>
+		<Section className={` ${className}`} paddingTop="false">
+			<ResponsiveRow className="page-top-content">
 				<ResponsiveRowText>
 					<div className="pt-12">
 						<Heading2 className="text-center pb-10">Onsen Etiquette</Heading2>
@@ -25,6 +24,7 @@ function Etiquette({className=""}){
 						</p>
 					</div>
 				</ResponsiveRowText>
+				<ResponsiveRowImage src={noren} alt="Noren sign" className="object-contain page-top-content"/>
 			</ResponsiveRow>
 		</Section>
 

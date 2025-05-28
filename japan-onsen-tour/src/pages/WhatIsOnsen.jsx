@@ -9,7 +9,7 @@ function WhatIsOnsen({className = ""}) {
 	
   return (
 		<Section className={className}>
-			<Heading2>What is Onsen?</Heading2>
+			<Heading2 className="page-top-content">What is Onsen?</Heading2>
 			<div className="mb-10">
 				<p className="mb-3">
 					Onsen is a cherished part of traditional Japanese culture that blends
