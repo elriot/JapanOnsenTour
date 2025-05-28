@@ -7,7 +7,11 @@ import DropdownMenu from '../components/DropdownMenu';
 
 function Navbar() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+	const [openMenu, setOpenMenu] = useState(null);
+
+	const toggleMenu = (menuName) => {
+   		setOpenMenu(openMenu === menuName ? null : menuName); 
+	};
 
 	return (
 		<nav className="bg-white fixed w-full z-50">
@@ -33,7 +37,7 @@ function Navbar() {
 						{/* Onsen 101 - subs : [ What is Onsen, Health Benefit ]  */}
 						<li className="relative">
 							<button
-								onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+								onClick={() => toggleMenu('onsen')}
 								className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
 							>
 								Onsen 101
@@ -42,7 +46,7 @@ function Navbar() {
 								</svg>
 							</button>
 
-							{isDropdownOpen && 
+							{openMenu == 'onsen' && 
 								<DropdownMenu items={[
 									{ to: '/onsen', label: 'What is Onsen?' },
 									{ to: '/health', label: 'Health Benefit' }
@@ -51,7 +55,7 @@ function Navbar() {
             			</li>
 						<li className="relative">
 							<button
-								onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+								onClick={() => toggleMenu('beforeYouGo')}
 								className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
 							>
 								Before You Go
@@ -60,7 +64,7 @@ function Navbar() {
 								</svg>
 							</button>
 
-							{isDropdownOpen && 
+							{openMenu == 'beforeYouGo' && 
 								<DropdownMenu items={[
 									{ to: '/etiquette', label: 'Onsen Etiquette' },
 									{ to: '/tattoo', label: 'Things to Know About Tattoos' },
@@ -69,7 +73,6 @@ function Navbar() {
 								]} />
 							}
             			</li>
-						{/* Onsen 101 menu Done */}
 
 					</ul>
 				</div>
