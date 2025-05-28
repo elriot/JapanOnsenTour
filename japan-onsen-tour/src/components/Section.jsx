@@ -3,7 +3,7 @@ function Section({children, className="", paddingTop = "true", paddingBottom = "
 	const topPadding = paddingTop === "true" ? "pt-20" : "";
 	const bottomPadding = paddingBottom === "true" ? "pb-20" : "";
 	return (
-		<section className={`p-8 ${bottomPadding} ${topPadding} ${className}`}>
+		<section className={`p-4 ${bottomPadding} ${topPadding} ${className}`}>
 			{children}
 		</section>
 	);

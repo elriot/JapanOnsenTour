@@ -9,7 +9,7 @@ function PackingEssensial({className= ""}){
 	return (
 		<Section className={className}>
 			<Heading2 center="true">Packing Essentials for Your Onsen Trip</Heading2>
-			<p className="text-center pb-15">
+			<p className="pb-15">
 				Preparing for an onsen trip is simple, but a few thoughtful choices can enhance your experience.
 			</p>
 
@@ -24,7 +24,7 @@ function PackingEssensial({className= ""}){
 			<ResponsiveRow>
 				<ItemCard title="Swimsuits & Clothing" description="Nude bathing is standard. All clothing must be left in the locker or changing area." />
 				<ItemCard title="Valuables" description="It’s best to keep jewelry and electronics in your hotel room or a secure locker." />
-  				<ItemCard title="Toiletries (Optional)" description="Photography is generally not allowed in bathing areas to ensure the privacy of all guests." />
+  				<ItemCard title="Phones & Camera (in the onsen)" description="Photography is generally not allowed in bathing areas to ensure the privacy of all guests." />
 			</ResponsiveRow>			
 		</Section>
 	);

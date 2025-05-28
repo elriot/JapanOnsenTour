@@ -12,8 +12,8 @@ function Etiquette({className=""}){
 			<ResponsiveRow>
 				<ResponsiveRowImage src={noren} alt="Noren sign" className="object-contain"/>
 				<ResponsiveRowText>
-					<Section paddingTop="false">
-						<Heading2 className="text-center">Onsen Etiquette</Heading2>
+					<div className="pt-12">
+						<Heading2 className="text-center pb-10">Onsen Etiquette</Heading2>
 						<p className="mb-4">
 							If you’re familiar with North American hot springs, there are a few important differences to keep in mind when visiting an onsen in Japan.
 						</p>
@@ -23,7 +23,7 @@ function Etiquette({className=""}){
 						<p className="mb-4">
 							In most public onsen, bathing areas are separated by gender, but some facilities alternate the men’s and women’s baths based on time of day, as part of a philosophy related to yin and yang balance. Be sure to check the Noren (暖簾, curtain sign) at the entrance to confirm the current gender designation before entering. Blue noren indicates the men’s bath, while red means the women’s bath.
 						</p>
-					</Section>
+					</div>
 				</ResponsiveRowText>
 			</ResponsiveRow>
 		</Section>
