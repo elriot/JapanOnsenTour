@@ -20,7 +20,7 @@ function RyokanHotel({ className = "" }) {
 <CompareTable data={compareData} />
 	return (
 		<Section className={`${className}`}>
-			<Heading2 className="">Ryokan Vs. Hotel</Heading2>
+			<Heading2 className="page-top-content">Ryokan Vs. Hotel</Heading2>
 			<ResponsiveRow>
 				<ResponsiveRowImage src={ryokanImg} alt="ryokan room" className="rounded-lg"></ResponsiveRowImage>
 				<ResponsiveRowImage src={kaisekiImg} alt="kaiseki dinner" className="rounded-lg"></ResponsiveRowImage>

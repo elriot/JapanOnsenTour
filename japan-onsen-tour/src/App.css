@@ -33,3 +33,24 @@
 a, Link {
 	@apply text-black no-underline;
 }
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.page-top-content {
+	@apply pt-11;
+}
+
+/* change all bg-gray-100 when you want to change header color*/
+.header-bg {
+	@apply bg-gray-100;
+}
+
+.header-menu-item-bg {
+    @apply bg-white md:bg-gray-100; 
+}
+
+.header-menu-item-hover {
+    @apply hover:bg-gray-100 md:hover:bg-gray-100;
+}

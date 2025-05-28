@@ -8,7 +8,7 @@ import tattooImg from "../images/tattoo.jpg";
 function Tattoo({className=""}){
 	return (
 		<Section className={className}>
-			<ResponsiveRow>
+			<ResponsiveRow className="page-top-content">
 				<ResponsiveRowText>
 					<Heading2>Things to Know About Tattoos</Heading2>
 				</ResponsiveRowText>
