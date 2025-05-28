@@ -9,12 +9,35 @@ import Etiquette from "./pages/Etiquette";
 import Tattoo from "./pages/Tattoo";
 import RyokanHotel from "./pages/RyokanHotel";
 import PackingEssensial from "./pages/PackingEssensial";
+import Footer from "./components/Footer";
 
 
 function App() {
   return (
     <>
 		<Router basename="/JapanOnsenTour">
+			<div className="flex flex-col min-h-screen">
+			{/* Header는 Routes 외부에 두는 게 좋아 */}
+			<Header />
+
+			{/* Main Content */}
+			<main className="flex-grow">
+				<Routes>
+					<Route path="/" element={<Main />} />
+					<Route path="/onsen" element={<WhatIsOnsen />} />
+					<Route path="/health" element={<HealthBenefit />} />
+					<Route path="/etiquette" element={<Etiquette />} />
+					<Route path="/tattoo" element={<Tattoo />} />
+					<Route path="/accomodation" element={<RyokanHotel />} />
+					<Route path="/packing" element={<PackingEssensial />} />
+				</Routes>
+			</main>
+
+			{/* Footer */}
+			<Footer />
+			</div>
+		</Router>
+		{/* <Router basename="/JapanOnsenTour">
 			<Header/>
 
 			<Routes>
@@ -28,6 +51,9 @@ function App() {
 				<Route path="/packing" element={<PackingEssensial />} />
 			</Routes>
 		</Router>
+		<Footer/> */}
+
+
 		{/* <Header/>
 
 		<WhatIsOnsen className="bg-odd"/>
