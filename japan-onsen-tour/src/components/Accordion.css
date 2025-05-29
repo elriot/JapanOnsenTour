@@ -1,78 +1,35 @@
-/* Overall Accordion Group */
-.accordion-group {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  overflow: hidden; /* Helps with border-radius on children */
-}
-
-/* Individual Accordion Item */
 .accordion-item {
-  border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
-.accordion-item:last-child {
-  border-bottom: none;
+.accordion-header {
+    cursor: pointer;
+    padding: 15px;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
 }
 
-/* Accordion Item Header */
-.accordion-item-header {
-  display: flex;
-  align-items: center; /* Vertically center icon and title */
-  padding: 15px;
-  cursor: pointer;
-  background-color: #f7f7f7;
-  transition: background-color 0.3s ease;
+.accordion-header:hover {
+    background-color: #eee;
 }
 
-.accordion-item-header:hover {
-  background-color: #eee;
+.icon {
+    margin-right: 10px;
+    font-size: 1.2em;
 }
 
-/* Icon Styling */
-.accordion-item-header .icon {
-  margin-right: 10px; /* Space between icon and title */
-  font-size: 1.2em; /* Make icon a bit larger */
-  width: 20px; /* Fixed width for alignment */
-  text-align: center;
+.title {
+    font-weight: bold;
 }
 
-/* Title Styling */
-.accordion-item-header .title {
-  flex-grow: 1; /* Allow title to take remaining space */
-  font-weight: bold;
-  text-align: left; /* Ensure title text is left-aligned */
+.accordion-content {
+    overflow: hidden;
+    transition: max-height 0.4s ease;
 }
 
-/* Accordion Item Content */
-.accordion-item-content {
-  background-color: #fff;
-  overflow: hidden; /* Important for the animation */
-  max-height: 0; /* Initially hidden */
-  padding-top: 0; /* Ensure no top padding when collapsed */
-  padding-bottom: 0; /* Ensure no bottom padding when collapsed */
-  padding-left: 15px; /* Keep horizontal padding */
-  padding-right: 15px; /* Keep horizontal padding */
-  transition: max-height 0.3s ease-out, padding-top 0.3s ease-out, padding-bottom 0.3s ease-out; /* Updated transition */
-  text-align: left; /* Ensure content text is left-aligned */
+.accordion-inner {
+    padding: 15px;
+    background-color: #fff;
 }
-
-/* Ensure all child elements within content also align left */
-.accordion-item-content * {
-  text-align: left;
-}
-
-/* Styling for when the item is open */
-/* If AccordionItem.jsx adds an 'open' class to the .accordion-item div when isOpen is true: */
-.accordion-item.open .accordion-item-content {
-   max-height: 600px; /* Adjust as needed, should be larger than any possible content. This value allows the CSS transition to work. */
-   padding-top: 15px; /* Restore top padding when open */
-   padding-bottom: 15px; /* Restore bottom padding when open */
-   /* padding-left and padding-right remain 15px as set in the base class */
-}
-
-/* Ensure the icon and title are properly structured in AccordionItem.jsx for this CSS:
-   <div className="accordion-item-header" onClick={onClick}>
-     <span className="icon">{isOpen ? '-' : '+'}</span>
-     <span className="title">{title}</span>
-   </div>
-*/
