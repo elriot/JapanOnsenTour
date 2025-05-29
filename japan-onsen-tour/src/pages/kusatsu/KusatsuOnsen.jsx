@@ -9,7 +9,7 @@ import KusatsuUniqueSpringSection from "./KusatsuUniqueSpringSection.jsx";
 function KusatsuOnsen({ className = "" }) {
   return (
     <div className={className}>
-      <KusatsuPageTop />
+      <KusatsuPageTop/>
 
       <KusatsuIntroSection />
 

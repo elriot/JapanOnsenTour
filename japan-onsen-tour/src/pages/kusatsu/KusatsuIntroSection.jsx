@@ -2,7 +2,7 @@ import Section from "../../components/Section";
 
 function KusatsuIntroSection({ className = "" }) {
   return (
-    <Section paddingBottom="false" className={className}>
+    <Section paddingTop="false" paddingBottom="true" className={className}>
       <p className="text-center">
         Renowned for centuries as one of Japan’s most powerful therapeutic
         springs, Kusatsu Onsen (草津温泉) is a historic hot spring town nestled
