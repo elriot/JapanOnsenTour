@@ -1,0 +1,84 @@
+/* Overall Accordion Group */
+.accordion-group {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden; /* Helps with border-radius on children */
+}
+
+/* Individual Accordion Item */
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+/* Accordion Item Header */
+.accordion-item-header {
+  display: flex;
+  align-items: center; /* Vertically center icon and title */
+  padding: 15px;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-item-header:hover {
+  background-color: #eee;
+}
+
+/* Icon Styling */
+.accordion-item-header .icon {
+  margin-right: 10px; /* Space between icon and title */
+  font-size: 1.2em; /* Make icon a bit larger */
+  width: 20px; /* Fixed width for alignment */
+  text-align: center;
+}
+
+/* Title Styling */
+.accordion-item-header .title {
+  flex-grow: 1; /* Allow title to take remaining space */
+  font-weight: bold;
+}
+
+/* Accordion Item Content */
+.accordion-item-content {
+  padding: 15px;
+  background-color: #fff;
+  overflow: hidden; /* Important for the animation */
+  max-height: 0; /* Initially hidden */
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Animation for height and padding */
+}
+
+/* Styling for when the item is open */
+.accordion-item.open .accordion-item-content {
+  /* max-height will be set by JS or a large enough value if only CSS */
+  /* For a pure CSS animation approach (without JS setting max-height explicitly to scrollHeight),
+     you might need to set a sufficiently large max-height, e.g., 500px,
+     but the provided JS solution dynamically handles 'isOpen' which is better.
+     The transition will work on max-height changing from 0 to a value. */
+  /* We'll rely on the isOpen prop to add a class or directly control rendering,
+     but for the animation to work with max-height, it needs a target value.
+     If content is rendered/removed, transition won't play.
+     So, we ensure content is always in DOM but hidden with max-height: 0.
+     When 'open', we need a class to change max-height.
+     Let's assume AccordionItem.jsx adds an 'open' class to the .accordion-item div when isOpen is true.
+  */
+}
+
+/* If AccordionItem.jsx adds an 'open' class to the .accordion-item div when isOpen is true: */
+.accordion-item.open .accordion-item-content {
+   max-height: 600px; /* Adjust as needed, should be larger than any possible content */
+   /* Alternatively, if you can set this via JS to the scrollHeight, that's more robust.
+      For now, a fixed large value will demonstrate the animation. */
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+/* Ensure the icon and title are properly structured in AccordionItem.jsx for this CSS:
+   <div className="accordion-item-header" onClick={onClick}>
+     <span className="icon">{isOpen ? '-' : '+'}</span>
+     <span className="title">{title}</span>
+   </div>
+*/
