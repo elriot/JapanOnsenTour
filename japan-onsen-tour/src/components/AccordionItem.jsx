@@ -8,11 +8,9 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
         <span className="icon">{isOpen ? '-' : '+'}</span>
         <span className="title">{title}</span>
       </div>
-      {isOpen && (
-        <div className="accordion-item-content">
-          {content}
-        </div>
-      )}
+      <div className="accordion-item-content">
+        {content}
+      </div>
     </div>
   );
 };
