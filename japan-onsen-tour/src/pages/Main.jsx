@@ -24,10 +24,10 @@ function Main() {
                 </h1>
 
                 {/* Added Accordion component */}
-                <div style={{ maxWidth: '900px', backgroundColor: 'rgba(255, 255, 255, 0.9)', padding: '20px', borderRadius: '8px' }}>
+                {/* <div style={{ maxWidth: '900px', backgroundColor: 'rgba(255, 255, 255, 0.9)', padding: '20px', borderRadius: '8px' }}>
                     <h2 className="text-2xl font-semibold mb-4 text-gray-800">Discover More</h2>
                     <Accordion items={accordionItems} />
-                </div>
+                </div> */}
             </div>
         </Section>
     );
