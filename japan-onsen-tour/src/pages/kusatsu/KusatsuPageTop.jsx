@@ -1,4 +1,5 @@
-import kusatsuImg from "../../images/kusatsu.jpg";
+import kusatsuImg from "../../images/kusatsu/kusatsu.jpg"
+// import kusatsuImg from "../../images/"
 
 function KusatsuPageTop({ className = "" }) {
   return (
