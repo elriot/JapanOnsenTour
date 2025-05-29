@@ -45,11 +45,14 @@
 
 /* Accordion Item Content */
 .accordion-item-content {
-  padding: 15px;
   background-color: #fff;
   overflow: hidden; /* Important for the animation */
   max-height: 0; /* Initially hidden */
-  transition: max-height 0.3s ease-out, padding 0.3s ease-out; /* Animation for height and padding */
+  padding-top: 0; /* Ensure no top padding when collapsed */
+  padding-bottom: 0; /* Ensure no bottom padding when collapsed */
+  padding-left: 15px; /* Keep horizontal padding */
+  padding-right: 15px; /* Keep horizontal padding */
+  transition: max-height 0.3s ease-out, padding-top 0.3s ease-out, padding-bottom 0.3s ease-out; /* Updated transition */
   text-align: left; /* Ensure content text is left-aligned */
 }
 
@@ -62,11 +65,9 @@
 /* If AccordionItem.jsx adds an 'open' class to the .accordion-item div when isOpen is true: */
 .accordion-item.open .accordion-item-content {
    max-height: 600px; /* Adjust as needed, should be larger than any possible content. This value allows the CSS transition to work. */
-   /* Note: padding transition also occurs due to the 'open' class,
-      matching the padding: 15px on .accordion-item-content when closed (but effectively 0 due to max-height:0)
-      and explicit padding-top/bottom here. */
-   padding-top: 15px;
-   padding-bottom: 15px;
+   padding-top: 15px; /* Restore top padding when open */
+   padding-bottom: 15px; /* Restore bottom padding when open */
+   /* padding-left and padding-right remain 15px as set in the base class */
 }
 
 /* Ensure the icon and title are properly structured in AccordionItem.jsx for this CSS:
