@@ -1,27 +1,29 @@
 .accordion-item {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #4B5563; /* Tailwind의 gray-700 비슷 */
 }
 
 .accordion-header {
     cursor: pointer;
     padding: 15px;
-    background-color: #f7f7f7;
+    background-color: #1F2937; /* Tailwind의 gray-800 */
     display: flex;
     align-items: center;
     transition: background-color 0.3s ease;
 }
 
 .accordion-header:hover {
-    background-color: #eee;
+    background-color: #374151; /* Tailwind의 gray-700 */
 }
 
 .icon {
     margin-right: 10px;
     font-size: 1.2em;
+    color: #F9FAFB; /* Tailwind의 gray-50 (거의 흰색) */
 }
 
 .title {
     font-weight: bold;
+    color: #F9FAFB; /* Tailwind의 gray-50 */
 }
 
 .accordion-content {
@@ -31,5 +33,6 @@
 
 .accordion-inner {
     padding: 15px;
-    background-color: #fff;
+    background-color: #111827; /* Tailwind의 gray-900 */
+    color: #F9FAFB; /* Tailwind의 gray-50 */
 }

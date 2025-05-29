@@ -33,10 +33,10 @@ function KusatsuOnsenPage({ className = "" }) {
 	  
       <SectionSeparatorWave
         className="bg-gray-300"
-        fillColorClass="fill-gray-400"
+        fillColorClass="fill-gray-800"
       />
 
-	  <KusatsuAttractions className="bg-gray-400" />
+	  <KusatsuAttractions className="bg-gray-800" />
     </div>
   );
 }

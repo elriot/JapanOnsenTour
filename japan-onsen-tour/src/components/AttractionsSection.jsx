@@ -27,7 +27,7 @@ function AttractionsSection({
         {/* Text */}
         <div className={`md:w-3/5 ${mdPaddingClass}`}>
           {title && (
-            <p className={`text-2xl font-semibold pl-${paddingSize} pb-10`}>
+            <p className={`text-2xl font-semibold pl-${paddingSize} pb-10 text-white`}>
               {title}
             </p>
           )}

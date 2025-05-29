@@ -39,7 +39,7 @@ function KusatsuAttractions({ className = "" }) {
   return (
     <AttractionsSection
       className={className}
-      title=""
+      title="Other Attractions Around Kusatsu"
       imageSrc={img}
       imageAlt="onsen"
       paddingSize={paddingSize}
@@ -53,9 +53,9 @@ function KusatsuAttractions({ className = "" }) {
               borderRadius: "8px",
             }}
           >
-            <h2 className="text-2xl font-semibold mb-4">
+            {/* <h2 className="text-2xl font-semibold mb-4">
               Other Attractions Around Kusatsu
-            </h2>
+            </h2> */}
             <Accordion items={accordionItems} />
           </div>
         </>
