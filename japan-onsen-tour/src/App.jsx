@@ -10,7 +10,7 @@ import Tattoo from "./pages/Tattoo";
 import RyokanHotel from "./pages/RyokanHotel";
 import PackingEssensial from "./pages/PackingEssensial";
 import Footer from "./components/Footer";
-import KusatsuOnsen from "./pages/KusatsuOnsen";
+import KusatsuOnsen from "./pages/kusatsu/KusatsuOnsen";
 
 
 function App() {

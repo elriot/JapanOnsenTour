@@ -1,11 +1,11 @@
-import Section from "../components/Section";
-import SubTitle from "../components/SubTitle";
-import ResponsiveRow from "../components/ResponsiveRow";
-import ResponsiveRowText from "../components/ResponsiveRowText";
+import ResponsiveRow from "../../components/ResponsiveRow.jsx";
+import ResponsiveRowText from "../../components/ResponsiveRowText.jsx";
+import Section from "../../components/Section.jsx";
+import SubTitle from "../../components/SubTitle.jsx";
 
-function BeforeYouGo({ className = "" }) {
+function KusatsuCityOverviewSection({ className = "" }) {
   return (
-    <Section paddingBottom="false" className={`${className}`}>
+    <Section paddingBottom="false" className={className}>
       <ResponsiveRow>
         <ResponsiveRowText>
           <SubTitle>City Overview</SubTitle>
@@ -31,5 +31,4 @@ function BeforeYouGo({ className = "" }) {
     </Section>
   );
 }
-
-export default BeforeYouGo;
+export default KusatsuCityOverviewSection;
