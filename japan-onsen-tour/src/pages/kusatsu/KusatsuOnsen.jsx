@@ -1,8 +1,7 @@
-
 import SectionSeparator from "../../components/SectionSeperator.jsx";
 import SectionSeparatorWave from "../../components/SectionSeperatorWave.jsx";
-// import SectionSeparatorWave from "../../components/SectionSeparatorWave.jsx";
 import KusatsuCityOverviewSection from "./KusatsuCityOverviewSection.jsx";
+import KusatsuFoodSection from "./KusatsuFoodSection.jsx";
 import KusatsuIntroSection from "./KusatsuIntroSection.jsx";
 import KusatsuPageTop from "./KusatsuPageTop.jsx";
 import KusatsuUniqueSpringSection from "./KusatsuUniqueSpringSection.jsx";
@@ -25,7 +24,15 @@ function KusatsuOnsen({ className = "" }) {
 
       <KusatsuUniqueSpringSection className="bg-gray-200" />
 
-	  <SectionSeparatorWave  className="bg-gray-200" fillColorClass="fill-gray-500" />
+      <SectionSeparator
+        className="bg-gray-200"
+        fillColorClass="fill-gray-300"
+      />
+      <KusatsuFoodSection className="bg-gray-300" />
+      <SectionSeparatorWave
+        className="bg-gray-300"
+        fillColorClass="fill-gray-500"
+      />
     </div>
   );
 }
