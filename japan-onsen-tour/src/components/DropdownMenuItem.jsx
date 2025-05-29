@@ -1,6 +1,9 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function DropdownMenuItem({ to, label, onClick, className="" }) {
+		const location = useLocation();
+  const currentPath = location.pathname;
+	
 	return (
 		<li>
 			<Link
@@ -8,7 +11,7 @@ function DropdownMenuItem({ to, label, onClick, className="" }) {
 				className={`${className} block px-4 py-2 hover:bg-gray-100`}
 				onClick={onClick}
 			>
-				{label}
+				<p className={`${currentPath.includes(to) ? "currentpage-underline" : ""}`}>{label}</p>
 			</Link>
 		</li>
 	);

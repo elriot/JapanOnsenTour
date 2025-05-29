@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import WhatIsOnsen from './WhatIsOnsen';
 import NavbarMenuItem from '../components/NavbarMenuItem';
 import MobileMenuButton from '../components/MobileMenuButton';
@@ -8,6 +8,8 @@ import DropdownMenu from '../components/DropdownMenu';
 function Navbar() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 	const [openMenu, setOpenMenu] = useState(null);
+	const location = useLocation();
+  const currentPath = location.pathname;
 
 	const toggleMenu = (menuName) => {
    		setOpenMenu(openMenu === menuName ? null : menuName); 
@@ -15,7 +17,7 @@ function Navbar() {
 
 	return (
 		<nav className="header-bg fixed w-full z-50">
-			<div className="max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4">
+			<div className={`max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4`}>
 
 				{/* Title */}
 				<Link to="/" className="flex items-center space-x-3 ">
@@ -45,7 +47,9 @@ function Navbar() {
 								onClick={() => toggleMenu('onsen')}
 								className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded header-menu-item-hover md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
 							>
-								Onsen 101
+								<p className={['/onsen', '/health'].some(path => currentPath.includes(path)) ? "currentpage-underline" : ""}>
+  								Onsen 101
+								</p>
 								<svg className="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
 									<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
 								</svg>
@@ -66,7 +70,9 @@ function Navbar() {
 								onClick={() => toggleMenu('beforeYouGo')}
 								className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded header-menu-item-hover md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
 							>
-								Before You Go
+								<p className={['/etiquette', '/tattoo','/accomodation','/packing'].some(path => currentPath.includes(path)) ? "currentpage-underline" : ""}>
+									Before You Go
+								</p>
 								<svg className="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
 									<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
 								</svg>
@@ -90,7 +96,9 @@ function Navbar() {
 								onClick={() => toggleMenu('topThreeTown')}
 								className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded header-menu-item-hover md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
 							>
-								Top 3 Onsen Town
+								<p className={['/kusatsu', '/arima','/gero'].some(path => currentPath.includes(path)) ? "currentpage-underline" : ""}>
+									Top 3 Onsen Town
+								</p>
 								<svg className="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
 									<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
 								</svg>
