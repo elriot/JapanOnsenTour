@@ -10,6 +10,7 @@ import Tattoo from "./pages/Tattoo";
 import RyokanHotel from "./pages/RyokanHotel";
 import PackingEssensial from "./pages/PackingEssensial";
 import Footer from "./components/Footer";
+import KusatsuOnsen from "./pages/kusatsu/KusatsuOnsen";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
 					<Route path="/tattoo" element={<Tattoo />} />
 					<Route path="/accomodation" element={<RyokanHotel />} />
 					<Route path="/packing" element={<PackingEssensial />} />
+					<Route path="/kusatsu" element={<KusatsuOnsen />} />
 				</Routes>
 			</main>
 
