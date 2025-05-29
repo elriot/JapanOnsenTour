@@ -1,6 +1,5 @@
 import CityInfoWithImageAndText from "../../components/CityInfoWithImageAndTextSection.jsx";
-import Section from "../../components/Section.jsx";
-import img from "../../images/kusatsu/unique.jpg";
+import img from "../../images/kusatsu/onsen.jpg";
 
 function KusatsuUniqueSpringSection({ className = "" }) {
   return (

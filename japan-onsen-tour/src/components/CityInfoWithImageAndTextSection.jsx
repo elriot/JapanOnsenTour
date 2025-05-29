@@ -7,16 +7,16 @@ function CityInfoWithImageAndText({
   imageSrc,
   imageAlt = "",
   textContent,
-  paddingSize = 5,
+  paddingSize = 10,
 }) {
   const mdPaddingClass = `md:pl-${paddingSize} md:pr-${paddingSize}`;
 
   return (
-    <Section className={className} paddingTop="true" paddingBottom="false">
-      <p className={`pl-${paddingSize} text-2xl font-semibold`}>{title}</p>
+    <Section className={`${className} p-${paddingSize}`} >
+      <p className={`text-2xl font-semibold pl-${paddingSize} pb-10`}>{title}</p>
 
       {/* Responsive Row */}
-      <ResponsiveRow className={`items-stretch p-${paddingSize}`}>
+      <ResponsiveRow className={`items-stretch md:gap-8`}>
         {/* Image */}
         <div className="md:w-2/5 flex rounded-lg overflow-hidden">
           <img

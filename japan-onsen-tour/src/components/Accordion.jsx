@@ -1,12 +1,20 @@
-import React, { useState } from 'react';
-import AccordionItem from './AccordionItem';
-import './Accordion.css';
+import React, { useState } from "react";
+import AccordionItem from "./AccordionItem";
+import "./Accordion.css";
 
-const Accordion = ({ items }) => {
-  const [openIndex, setOpenIndex] = useState(null);
+const Accordion = ({ items, allowMultiple = false }) => {
+  const [openIndexes, setOpenIndexes] = useState([]);
 
   const handleClick = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
+    if (allowMultiple) {
+      setOpenIndexes((prev) =>
+        prev.includes(index)
+          ? prev.filter((i) => i !== index)
+          : [...prev, index]
+      );
+    } else {
+      setOpenIndexes(openIndexes[0] === index ? [] : [index]);
+    }
   };
 
   return (
@@ -16,7 +24,7 @@ const Accordion = ({ items }) => {
           key={index}
           title={item.title}
           content={item.content}
-          isOpen={index === openIndex}
+          isOpen={openIndexes.includes(index)}
           onClick={() => handleClick(index)}
         />
       ))}
