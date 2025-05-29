@@ -7,7 +7,7 @@ import KusatsuIntroSection from "./KusatsuIntroSection.jsx";
 import KusatsuPageTop from "./KusatsuPageTop.jsx";
 import KusatsuUniqueSpringSection from "./KusatsuUniqueSpringSection.jsx";
 
-function KusatsuOnsen({ className = "" }) {
+function KusatsuOnsenPage({ className = "" }) {
   return (
     <div className={className}>
       <KusatsuPageTop/>
@@ -30,13 +30,15 @@ function KusatsuOnsen({ className = "" }) {
         fillColorClass="fill-gray-300"
       />
       <KusatsuFoodSection className="bg-gray-300" />
+	  
       <SectionSeparatorWave
         className="bg-gray-300"
-        fillColorClass="fill-gray-500"
+        fillColorClass="fill-gray-400"
       />
-	  <KusatsuAttractions className="bg-gray-500" />
+
+	  <KusatsuAttractions className="bg-gray-400" />
     </div>
   );
 }
 
-export default KusatsuOnsen;
+export default KusatsuOnsenPage;

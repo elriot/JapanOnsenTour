@@ -4,13 +4,12 @@ import Header from "./pages/Header";
 import Main from "./pages/Main";
 import WhatIsOnsen from "./pages/WhatIsOnsen";
 import HealthBenefit from "./pages/HealthBenefit";
-import BeforeYouGo from "./pages/BeforeYouGo";
 import Etiquette from "./pages/Etiquette";
 import Tattoo from "./pages/Tattoo";
 import RyokanHotel from "./pages/RyokanHotel";
 import PackingEssensial from "./pages/PackingEssensial";
 import Footer from "./components/Footer";
-import KusatsuOnsen from "./pages/kusatsu/KusatsuOnsen";
+import KusatsuOnsenPage from "./pages/kusatsu/KusatsuOnsenPage";
 
 
 function App() {
@@ -31,7 +30,7 @@ function App() {
 					<Route path="/tattoo" element={<Tattoo />} />
 					<Route path="/accomodation" element={<RyokanHotel />} />
 					<Route path="/packing" element={<PackingEssensial />} />
-					<Route path="/kusatsu" element={<KusatsuOnsen />} />
+					<Route path="/kusatsu" element={<KusatsuOnsenPage />} />
 				</Routes>
 			</main>
 
