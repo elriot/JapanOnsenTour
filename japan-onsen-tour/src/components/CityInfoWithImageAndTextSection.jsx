@@ -1,5 +1,5 @@
 import ResponsiveRow from "./ResponsiveRow";
-import SubTitle from "./SubTitle";
+import Section from "./Section";
 
 function CityInfoWithImageAndText({
   className = "",
@@ -7,12 +7,12 @@ function CityInfoWithImageAndText({
   imageSrc,
   imageAlt = "",
   textContent,
-  paddingSize = 10,
+  paddingSize = 5,
 }) {
   const mdPaddingClass = `md:pl-${paddingSize} md:pr-${paddingSize}`;
 
   return (
-    <section className={className}>
+    <Section className={className} paddingTop="true" paddingBottom="false">
       <p className={`pl-${paddingSize} text-2xl font-semibold`}>{title}</p>
 
       {/* Responsive Row */}
@@ -29,7 +29,7 @@ function CityInfoWithImageAndText({
         {/* Text */}
         <div className={`md:w-3/5 ${mdPaddingClass}`}>{textContent}</div>
       </ResponsiveRow>
-    </section>
+    </Section>
   );
 }
 
