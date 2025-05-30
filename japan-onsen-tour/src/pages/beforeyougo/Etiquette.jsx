@@ -3,7 +3,8 @@ import ResponsiveRowImage from "../../components/ResponsiveRowImage";
 import ResponsiveRow from "../../components/ResponsiveRow";
 import ResponsiveRowText from "../../components/ResponsiveRowText";
 import Section from "../../components/Section";
-import noren from "../../images/noren.jpg";
+import mannerImg from "../../images/beforeyougo/manner.jpg";
+import ResponsiveRowImageNotStretch from "../../components/ResponsiveRowImage\bNotStretch";
 
 function Etiquette({className=""}){
 
@@ -24,7 +25,15 @@ function Etiquette({className=""}){
 						</p>
 					</div>
 				</ResponsiveRowText>
-				<ResponsiveRowImage src={noren} alt="Noren sign" className="object-contain page-top-content"/>
+				<ResponsiveRowImageNotStretch className="page-top-content" src={mannerImg} alt="onsen manner image"/>
+				{/* <div className="w-full md:w-1/2 flex justify-center">
+					<img 
+						src={mannerImg} 
+						alt="onsen manner image"
+						className="w-full  h-auto object-contain page-top-content" 
+					/>
+				</div> */}
+				{/* <ResponsiveRowImage src={mannerImg} alt="onsen manner image" className="object-contain page-top-content "/> */}
 			</ResponsiveRow>
 		</Section>
 
