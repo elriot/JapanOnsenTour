@@ -1,4 +1,5 @@
 import CityInfoWithImageAndText from "../../components/CityInfoWithImageAndTextSection.jsx";
+import SubTitle from "../../components/SubTitle.jsx";
 import img from "../../images/kusatsu/onsen.jpg";
 
 function KusatsuUniqueSpringSection({ className = "" }) {
@@ -9,8 +10,9 @@ function KusatsuUniqueSpringSection({ className = "" }) {
       imageSrc={img}
       imageAlt="Kusatsu Onsen"
       textContent={
-        <>
-          <p className="mb-4">
+        <div className="page-content-text">
+					<p className="font-semibold text-2xl mb-4">Sulfur-Rich, High-Temperature Waters</p>
+          <p className="page-content-text mb-4">
             Located on the slopes of Mount Kusatsu-Shirane (草津白根山), Kusatsu
             Onsen (草津温泉) has long been celebrated for its healing powers.
             Historical figures such as Tokugawa Ieyasu (徳川家康) and Tokugawa
@@ -25,7 +27,7 @@ function KusatsuUniqueSpringSection({ className = "" }) {
             performance—a traditional method of cooling hot spring water without
             reducing its therapeutic properties.
           </p>
-        </>
+        </div>
       }
     />
   );

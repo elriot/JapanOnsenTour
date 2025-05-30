@@ -1,9 +1,9 @@
-import Heading2 from "../components/Heading2";
-import ResponsiveRowImage from "../components/ResoponsiveRowImage";
-import ResponsiveRow from "../components/ResponsiveRow";
-import ResponsiveRowText from "../components/ResponsiveRowText";
-import Section from "../components/Section";
-import noren from "../images/noren.jpg";
+import Heading2 from "../../components/Heading2";
+import ResponsiveRowImage from "../../components/ResoponsiveRowImage";
+import ResponsiveRow from "../../components/ResponsiveRow";
+import ResponsiveRowText from "../../components/ResponsiveRowText";
+import Section from "../../components/Section";
+import noren from "../../images/noren.jpg";
 
 function Etiquette({className=""}){
 

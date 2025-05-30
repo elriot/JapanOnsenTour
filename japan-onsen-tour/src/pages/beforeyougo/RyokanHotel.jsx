@@ -1,10 +1,10 @@
-import Heading2 from "../components/Heading2";
-import ResponsiveRowImage from "../components/ResoponsiveRowImage";
-import ResponsiveRow from "../components/ResponsiveRow";
-import Section from "../components/Section";
-import CompareTable from "../components/CompareTable";
-import ryokanImg from "../images/ryokan2.jpg";
-import kaisekiImg from "../images/kaiseki.jpg";
+import Heading2 from "../../components/Heading2";
+import ResponsiveRowImage from "../../components/ResoponsiveRowImage";
+import ResponsiveRow from "../../components/ResponsiveRow";
+import Section from "../../components/Section";
+import CompareTable from "../../components/CompareTable";
+import ryokanImg from "../../images/ryokan2.jpg";
+import kaisekiImg from "../../images/kaiseki.jpg";
 
 function RyokanHotel({ className = "" }) {
 	const compareData = [

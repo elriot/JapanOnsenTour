@@ -26,10 +26,10 @@ function KusatsuPageTop({ className = "" }) {
       </div> */}
       </div>
       <Section paddingBottom="false">
-        <SubTitle className="text-center">
+        <p className="text-center text-2xl mb-4 font-semibold">
           A Legendary Healing Spring in the Heart of Gunma
-        </SubTitle>
-        <Heading2 className="text-4xl text-center pb-">
+        </p>
+        <Heading2 className="text-5xl text-center pb-">
           Kusatsu Onsen 草津温泉
         </Heading2>
       </Section>

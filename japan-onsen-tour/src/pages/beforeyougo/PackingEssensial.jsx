@@ -1,8 +1,8 @@
-import Heading2 from "../components/Heading2";
-import SubTitle from "../components/SubTitle";
-import ItemCard from "../components/ItemCard";
-import ResponsiveRow from "../components/ResponsiveRow";
-import Section from "../components/Section";
+import Heading2 from "../../components/Heading2";
+import SubTitle from "../../components/SubTitle";
+import ItemCard from "../../components/ItemCard";
+import ResponsiveRow from "../../components/ResponsiveRow";
+import Section from "../../components/Section";
 
 
 function PackingEssensial({className= ""}){

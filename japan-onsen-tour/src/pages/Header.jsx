@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import WhatIsOnsen from './WhatIsOnsen';
 import NavbarMenuItem from '../components/NavbarMenuItem';
 import MobileMenuButton from '../components/MobileMenuButton';
 import DropdownMenu from '../components/DropdownMenu';

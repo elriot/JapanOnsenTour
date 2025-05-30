@@ -1,9 +1,9 @@
-import FullWidthImage from "../components/FullWidthImage";
-import Heading2 from "../components/Heading2";
-import ResponsiveRow from "../components/ResponsiveRow";
-import ResponsiveRowText from "../components/ResponsiveRowText";
-import Section from "../components/Section";
-import tattooImg from "../images/tattoo.jpg";
+import FullWidthImage from "../../components/FullWidthImage";
+import Heading2 from "../../components/Heading2";
+import ResponsiveRow from "../../components/ResponsiveRow";
+import ResponsiveRowText from "../../components/ResponsiveRowText";
+import Section from "../../components/Section";
+import tattooImg from "../../images/tattoo.jpg";
 
 function Tattoo({className=""}){
 	return (

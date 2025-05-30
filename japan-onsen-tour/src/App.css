@@ -58,3 +58,6 @@ a, Link {
 .currentpage-underline {
 	text-decoration: underline;
 }
+.page-content-text {
+	@apply text-lg
+}

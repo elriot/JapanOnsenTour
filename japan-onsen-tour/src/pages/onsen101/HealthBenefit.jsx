@@ -1,6 +1,6 @@
-import Heading2 from "../components/Heading2";
-import ResponsiveRow from "../components/ResponsiveRow";
-import Section from "../components/Section";
+import Heading2 from "../../components/Heading2";
+import ResponsiveRow from "../../components/ResponsiveRow";
+import Section from "../../components/Section";
 
 function HealthBenefit({className=""}) {
   return (

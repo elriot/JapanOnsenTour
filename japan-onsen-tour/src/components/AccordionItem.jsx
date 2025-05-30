@@ -7,7 +7,7 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
     <div className="accordion-item">
       <div className="accordion-header" onClick={onClick}>
         <span className="icon">{isOpen ? "-" : "+"}</span>
-        <span className="title">{title}</span>
+        <span className="page-content-text title">{title}</span>
       </div>
       <div
         ref={contentRef}
@@ -16,7 +16,7 @@ const AccordionItem = ({ title, content, isOpen, onClick }) => {
           maxHeight: isOpen ? `${contentRef.current?.scrollHeight}px` : "0px",
         }}
       >
-        <div className="accordion-inner">{content}</div>
+        <div className="page-content-text accordion-inner">{content}</div>
       </div>
     </div>
   );

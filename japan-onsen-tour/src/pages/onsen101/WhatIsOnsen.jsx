@@ -1,9 +1,9 @@
-import onsenImg from "../images/onsen_01.jpg";
-import onsenImg2 from "../images/onsen_02.jpg";
-import Heading2 from "../components/Heading2";
-import Section from "../components/Section";
-import ResponsiveRow from "../components/ResponsiveRow";
-import ResponsiveRowImage from "../components/ResoponsiveRowImage";
+import onsenImg from "../../images/onsen_01.jpg";
+import onsenImg2 from "../../images/onsen_02.jpg";
+import Heading2 from "../../components/Heading2";
+import Section from "../../components/Section";
+import ResponsiveRow from "../../components/ResponsiveRow";
+import ResponsiveRowImage from "../../components/ResoponsiveRowImage";
 
 function WhatIsOnsen({className = ""}) {
 	
