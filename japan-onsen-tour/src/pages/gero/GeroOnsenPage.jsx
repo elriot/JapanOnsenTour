@@ -23,8 +23,8 @@ function GeroOnsenPage({ className = "" }) {
 			<SectionSeparator className="bg-zinc-200" fillColorClass="fill-zinc-300" />
 			<GeroFoodSection className="bg-zinc-300"/>
 
-			<SectionSeperatorWave className="bg-zinc-300" fillColorClass="fill-zinc-500" />
-			<GeroAttractions className="bg-zinc-500"/>
+			<SectionSeperatorWave className="bg-zinc-300" fillColorClass="fill-zinc-600" />
+			<GeroAttractions className="bg-zinc-600"/>
     </div>
   );
 }
