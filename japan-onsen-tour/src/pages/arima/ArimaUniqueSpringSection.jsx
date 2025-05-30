@@ -70,7 +70,7 @@ function ArimaUniqueSpringSection({ className = "" }) {
           </div>
         }
       />
-			<p className="page-content-text text-center px-10 pb-10">
+			<p className="page-content-text text-center p-10">
 				Many local bathhouses, such as Kin no Yu (金の湯) and Gin no Yu (銀の湯), offer day-use access to both spring types, allowing visitors to enjoy a full-body rejuvenation routine.
 			</p>
     </div>
