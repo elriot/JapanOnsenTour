@@ -1,10 +1,6 @@
-import Section from "../../components/Section";
-import kusatsuImg from "../../images/kusatsu/kusatsu.jpg";
-import Heading2 from "../../components/Heading2";
-import SubTitle from "../../components/SubTitle";
-// import kusatsuImg from "../../images/"
 
-function KusatsuPageTop({ className = "" }) {
+import kusatsuImg from "../../images/kusatsu/kusatsu.jpg";
+function KusatsuTopImage({ className = "" }) {
   return (
     <div>
       <div
@@ -25,16 +21,16 @@ function KusatsuPageTop({ className = "" }) {
         </p>
       </div> */}
       </div>
-      <Section paddingBottom="false">
+      {/* <Section paddingBottom="false" className="pb-0">
         <p className="text-center text-2xl mb-4 font-semibold">
           A Legendary Healing Spring in the Heart of Gunma
         </p>
         <Heading2 className="text-5xl text-center pb-">
           Kusatsu Onsen 草津温泉
         </Heading2>
-      </Section>
+      </Section> */}
     </div>
   );
 }
 
-export default KusatsuPageTop;
+export default KusatsuTopImage;

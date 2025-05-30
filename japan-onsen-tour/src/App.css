@@ -6,6 +6,7 @@
 /* background-color: aquamarine; */
   /* padding: 2rem; */
   /* text-align: center; */
+	font-family: 'Noto Sans', sans-serif;
 }
 
 
@@ -39,7 +40,7 @@ a, Link {
 }
 
 .page-top-content {
-	@apply pt-11;
+	@apply pt-10;
 }
 
 /* change all bg-gray-100 when you want to change header color*/
@@ -59,5 +60,13 @@ a, Link {
 	text-decoration: underline;
 }
 .page-content-text {
-	@apply text-lg
+	@apply text-lg;
 }
+
+.p-gap {
+	@apply mb-4 md:mb-5;
+}
+
+/* .section-padding {
+	@apply p-5 md:p-10;
+} */

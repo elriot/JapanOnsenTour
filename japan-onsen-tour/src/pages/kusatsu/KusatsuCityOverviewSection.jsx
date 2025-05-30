@@ -1,6 +1,6 @@
 import ResponsiveRow from "../../components/ResponsiveRow.jsx";
 import ResponsiveRowText from "../../components/ResponsiveRowText.jsx";
-import ResponsiveRowImage from "../../components/ResoponsiveRowImage.jsx";
+import ResponsiveRowImage from "../../components/ResponsiveRowImage.jsx";
 import Section from "../../components/Section.jsx";
 import SubTitle from "../../components/SubTitle.jsx";
 import overviewImg from "../../images/kusatsu/overview.jpg";

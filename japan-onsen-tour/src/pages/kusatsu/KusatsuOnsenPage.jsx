@@ -4,13 +4,13 @@ import KusatsuAttractions from "./KusatsuAttractions.jsx";
 import KusatsuCityOverviewSection from "./KusatsuCityOverviewSection.jsx";
 import KusatsuFoodSection from "./KusatsuFoodSection.jsx";
 import KusatsuIntroSection from "./KusatsuIntroSection.jsx";
-import KusatsuPageTop from "./KusatsuPageTop.jsx";
+import KusatsuTopImage from "./KusatsuTopImage.jsx";
 import KusatsuUniqueSpringSection from "./KusatsuUniqueSpringSection.jsx";
 
 function KusatsuOnsenPage({ className = "" }) {
   return (
     <div className={className}>
-      <KusatsuPageTop/>
+      <KusatsuTopImage/>
 
       <KusatsuIntroSection />
 

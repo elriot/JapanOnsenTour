@@ -21,7 +21,7 @@ function App() {
           <Header />
 
           {/* Main Content */}
-          <main className="flex-grow">
+          <main className="flex-grow pt-16">
             <Routes>
               <Route path="/" element={<Main />} />
               <Route path="/onsen" element={<WhatIsOnsen />} />

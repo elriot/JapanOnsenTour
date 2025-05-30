@@ -9,14 +9,14 @@ function CityInfoWithImageAndText({
   textContent,
   paddingSize = 10,
 }) {
-  const mdPaddingClass = `md:pl-${paddingSize} md:pr-${paddingSize}`;
+  // const mdPaddingClass = `md:pl-${paddingSize} md:pr-${paddingSize}`;
 
   return (
     <Section className={`${className} p-${paddingSize}`} >
       <p className={`text-2xl font-semibold pl-${paddingSize} pb-10`}>{title}</p>
 
       {/* Responsive Row */}
-      <ResponsiveRow className={`items-stretch md:gap-8`}>
+      <ResponsiveRow className={`items-stretch gap-10`}>
         {/* Image */}
         <div className="md:w-2/5 flex rounded-lg overflow-hidden">
           <img
@@ -27,7 +27,7 @@ function CityInfoWithImageAndText({
         </div>
 
         {/* Text */}
-        <div className={`md:w-3/5 ${mdPaddingClass}`}>{textContent}</div>
+        <div className={`md:w-3/5`}>{textContent}</div>
       </ResponsiveRow>
     </Section>
   );

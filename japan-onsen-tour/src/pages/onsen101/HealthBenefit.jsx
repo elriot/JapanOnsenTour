@@ -8,15 +8,15 @@ function HealthBenefit({className=""}) {
 			<ResponsiveRow className="page-top-content">
 				<Heading2 className="md:w-1/2">Health Benefit Of Onsen</Heading2>
 				<div className="md:w-1/2 page-content-text">
-					<p className="mb-4">
+					<p className="p-gap">
 					Onsen have been enjoyed in Japan for centuries as a way to relax and
 					heal.
 					</p>
-					<p className="mb-4">
+					<p className="p-gap">
 					If you’re feeling tired physically or mentally, a warm soak in an
 					onsen might be just what you need.
 					</p>
-					<p className="mb-4">
+					<p className="p-gap">
 					Being surrounded by quiet nature also helps calm your mind. After
 					bathing, your body cools down naturally, which can lead to better,
 					deeper sleep.
