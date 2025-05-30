@@ -24,7 +24,7 @@ function Tattoo({className=""}){
 					</p>
 				</ResponsiveRowText>
 			</ResponsiveRow>
-			<FullWidthImage src={tattooImg} art="Tattoo warning" className="pt-5 md:pt-20" fullWidth="true"/>
+			<FullWidthImage src={tattooImg} art="Tattoo warning" className="pt-5 md:pt-20" fullWidth="false"/>
 			{/* <div className="w-full my-8">
 				<img src={tattooImg} alt="Tattoo Warning" className="w-full h-auto" />
 			</div> */}

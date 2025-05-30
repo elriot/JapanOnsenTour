@@ -1,5 +1,5 @@
 function FullWidthImage({src, alt="", className="", fullWidth = "false"}){
-	const extraSettting = fullWidth === "true" ? "w-full h-auto" : "";
+	const extraSettting = fullWidth === "true" ? "w-full h-auto" : "lg:max-w-xl";
 
 	return(
 		<div className={`w-full flex justify-center items-center ${className}`}>
