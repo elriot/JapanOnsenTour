@@ -2,12 +2,12 @@ import "/src/App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Header from "./pages/Header";
 import Main from "./pages/Main";
-import WhatIsOnsen from "./pages/WhatIsOnsen";
-import HealthBenefit from "./pages/HealthBenefit";
-import Etiquette from "./pages/Etiquette";
-import Tattoo from "./pages/Tattoo";
-import RyokanHotel from "./pages/RyokanHotel";
-import PackingEssensial from "./pages/PackingEssensial";
+import WhatIsOnsen from "./pages/onsen101/WhatIsOnsen";
+import HealthBenefit from "./pages/onsen101/HealthBenefit";
+import Etiquette from "./pages/beforeyougo/Etiquette";
+import Tattoo from "./pages/beforeyougo/Tattoo";
+import RyokanHotel from "./pages/beforeyougo/RyokanHotel";
+import PackingEssensial from "./pages/beforeyougo/PackingEssensial";
 import Footer from "./components/Footer";
 import KusatsuOnsenPage from "./pages/kusatsu/KusatsuOnsenPage";
 import BackToTopButton from "./components/BackToTopButton";
@@ -21,7 +21,7 @@ function App() {
           <Header />
 
           {/* Main Content */}
-          <main className="flex-grow">
+          <main className="flex-grow pt-16">
             <Routes>
               <Route path="/" element={<Main />} />
               <Route path="/onsen" element={<WhatIsOnsen />} />

@@ -13,8 +13,8 @@ function ItemGrid({ items = [] }) {
           />
           <div className="p-4">
             <h3 className="text-lg font-semibold">{item.title}</h3>
-            <p className="text-sm text-gray-600">{item.subtitle}</p>
-            <p className="text-sm text-gray-500 mt-2">{item.description}</p>
+            <p className="text-lg text-gray-600">{item.subtitle}</p>
+            <p className="text-base text-gray-500 mt-4">{item.description}</p>
           </div>
         </div>
       ))}

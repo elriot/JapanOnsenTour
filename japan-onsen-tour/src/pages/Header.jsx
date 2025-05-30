@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import WhatIsOnsen from './WhatIsOnsen';
 import NavbarMenuItem from '../components/NavbarMenuItem';
 import MobileMenuButton from '../components/MobileMenuButton';
 import DropdownMenu from '../components/DropdownMenu';
@@ -16,7 +15,7 @@ function Navbar() {
 	};
 
 	return (
-		<nav className="header-bg fixed w-full z-50">
+		<nav className="page-content-text header-bg fixed w-full z-50">
 			<div className={`max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4`}>
 
 				{/* Title */}
@@ -58,7 +57,7 @@ function Navbar() {
 							{openMenu == 'onsen' && 
 								<DropdownMenu items={[
 									{ to: '/onsen', label: 'What is Onsen?' },
-									{ to: '/health', label: 'Health Benefit' }
+									{ to: '/health', label: 'Health Benefit' },
 									]}
 									onLinkClick={() => {setOpenMenu(null); setIsMobileMenuOpen(false);}}
 									className="header-menu-item-hover"

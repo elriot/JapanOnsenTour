@@ -1,6 +1,6 @@
 import ResponsiveRow from "../../components/ResponsiveRow.jsx";
 import ResponsiveRowText from "../../components/ResponsiveRowText.jsx";
-import ResponsiveRowImage from "../../components/ResoponsiveRowImage.jsx";
+import ResponsiveRowImage from "../../components/ResponsiveRowImage.jsx";
 import Section from "../../components/Section.jsx";
 import SubTitle from "../../components/SubTitle.jsx";
 import overviewImg from "../../images/kusatsu/overview.jpg";
@@ -14,7 +14,7 @@ function KusatsuCityOverviewSection({ className = "" }) {
         imageSrc={overviewImg}
         imageAlt="Kusatsu Onsen"
         textContent={
-          <>
+          <div className="page-content-text">
             <p className="mb-4">
               Located on the slopes of Mount Kusatsu-Shirane (草津白根山),
               Kusatsu Onsen (草津温泉) has long been celebrated for its healing
@@ -30,7 +30,7 @@ function KusatsuCityOverviewSection({ className = "" }) {
               performance—a traditional method of cooling hot spring water
               without reducing its therapeutic properties.
             </p>
-          </>
+          </div>
         }
         // paddingSize={10}
       />

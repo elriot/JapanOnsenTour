@@ -48,7 +48,7 @@ function KusatsuFoodSection({ className = "" }) {
 
   return (
     <FoodSection
-      className={className}
+      className={`${className}`}
       title="Must-Try Local Food"
       items={items}
     />

@@ -6,6 +6,7 @@
 /* background-color: aquamarine; */
   /* padding: 2rem; */
   /* text-align: center; */
+	font-family: 'Noto Sans', sans-serif;
 }
 
 
@@ -39,7 +40,7 @@ a, Link {
 }
 
 .page-top-content {
-	@apply pt-11;
+	@apply pt-10;
 }
 
 /* change all bg-gray-100 when you want to change header color*/
@@ -58,3 +59,23 @@ a, Link {
 .currentpage-underline {
 	text-decoration: underline;
 }
+.page-content-text {
+	@apply text-lg;
+}
+
+.p-gap {
+	@apply mb-4 md:mb-5;
+}
+
+.highlight-text {
+	background: linear-gradient(
+  to right,
+  rgba(255, 255, 0, 0.6) 2%,
+  rgba(255, 255, 0, 0.2) 2%,
+  rgba(255, 255, 0, 0.2) 98%,
+  rgba(255, 255, 0, 0.6 ) 2% 
+);
+}
+/* .section-padding {
+	@apply p-5 md:p-10;
+} */
