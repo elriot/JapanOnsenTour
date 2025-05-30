@@ -10,7 +10,7 @@ import KusatsuUniqueSpringSection from "./KusatsuUniqueSpringSection.jsx";
 function KusatsuOnsenPage({ className = "" }) {
   return (
     <div className={className}>
-      <KusatsuTopImage/>
+      <KusatsuTopImage />
 
       <KusatsuIntroSection />
 
@@ -30,13 +30,13 @@ function KusatsuOnsenPage({ className = "" }) {
         fillColorClass="fill-gray-300"
       />
       <KusatsuFoodSection className="bg-gray-300" />
-	  
+
       <SectionSeparatorWave
         className="bg-gray-300"
         fillColorClass="fill-gray-800"
       />
 
-	  <KusatsuAttractions className="bg-gray-800" />
+      <KusatsuAttractions className="bg-gray-800" />
     </div>
   );
 }

@@ -15,7 +15,7 @@ function KusatsuCityOverviewSection({ className = "" }) {
         imageAlt="Kusatsu Onsen"
         textContent={
           <div className="page-content-text">
-            <p className="mb-4">
+            <p className="p-gap">
               Located on the slopes of Mount Kusatsu-Shirane (草津白根山),
               Kusatsu Onsen (草津温泉) has long been celebrated for its healing
               powers. Historical figures such as Tokugawa Ieyasu (徳川家康) and
