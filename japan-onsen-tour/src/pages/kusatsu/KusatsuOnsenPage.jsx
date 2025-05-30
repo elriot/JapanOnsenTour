@@ -10,33 +10,33 @@ import KusatsuUniqueSpringSection from "./KusatsuUniqueSpringSection.jsx";
 function KusatsuOnsenPage({ className = "" }) {
   return (
     <div className={className}>
-      <KusatsuTopImage/>
+      <KusatsuTopImage />
 
       <KusatsuIntroSection />
 
-      <SectionSeparator className="bg-white" fillColorClass="fill-gray-100" />
+      <SectionSeparator className="bg-white" fillColorClass="fill-slate-100" />
 
-      <KusatsuCityOverviewSection className="bg-gray-100" />
-
-      <SectionSeparator
-        className="bg-gray-100"
-        fillColorClass="fill-gray-200"
-      />
-
-      <KusatsuUniqueSpringSection className="bg-gray-200" />
+      <KusatsuCityOverviewSection className="bg-slate-100" />
 
       <SectionSeparator
-        className="bg-gray-200"
-        fillColorClass="fill-gray-300"
+        className="bg-slate-100"
+        fillColorClass="fill-slate-200"
       />
-      <KusatsuFoodSection className="bg-gray-300" />
-	  
+
+      <KusatsuUniqueSpringSection className="bg-slate-200" />
+
+      <SectionSeparator
+        className="bg-slate-200"
+        fillColorClass="fill-slate-300"
+      />
+      <KusatsuFoodSection className="bg-slate-300" />
+
       <SectionSeparatorWave
-        className="bg-gray-300"
-        fillColorClass="fill-gray-800"
+        className="bg-slate-300"
+        fillColorClass="fill-slate-700"
       />
 
-	  <KusatsuAttractions className="bg-gray-800" />
+      <KusatsuAttractions className="bg-slate-700" />
     </div>
   );
 }
