@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import KusatsuOnsenPage from "./pages/kusatsu/KusatsuOnsenPage";
 import BackToTopButton from "./components/BackToTopButton";
 import ArimaOnsenPage from "./pages/arima/ArimaOnsenPage";
+import GeroOnsenPage from "./pages/gero/GeroOnsenPage";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
               <Route path="/packing" element={<PackingEssensial />} />
               <Route path="/kusatsu" element={<KusatsuOnsenPage />} />
 							<Route path="/arima" element={<ArimaOnsenPage />} />
+							<Route path="/gero" element={<GeroOnsenPage />} />
             </Routes>
           </main>
 

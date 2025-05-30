@@ -39,7 +39,7 @@ function ArimaAttractions({ className = "" }) {
   return (
     <AttractionsSection
       className={className}
-      title="Other Attractions Around Kusatsu"
+      title="Other Attractions Around Arima"
       imageSrc={img}
       imageAlt="onsen"
       paddingSize={paddingSize}
