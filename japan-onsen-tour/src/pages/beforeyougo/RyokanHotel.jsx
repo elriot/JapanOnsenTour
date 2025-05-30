@@ -22,8 +22,8 @@ function RyokanHotel({ className = "" }) {
 		<Section className={`${className} page-content-text`}>
 			<Heading2 className="page-top-content">Ryokan Vs. Hotel</Heading2>
 			<ResponsiveRow>
-				<ResponsiveRowImage src={ryokanImg} alt="ryokan room" className="rounded-lg"></ResponsiveRowImage>
-				<ResponsiveRowImage src={kaisekiImg} alt="kaiseki dinner" className="rounded-lg"></ResponsiveRowImage>
+				<ResponsiveRowImage src={ryokanImg} alt="ryokan room" rounded="true"></ResponsiveRowImage>
+				<ResponsiveRowImage src={kaisekiImg} alt="kaiseki dinner" rounded="true"></ResponsiveRowImage>
 			</ResponsiveRow>
 			<div className="pt-10 pb-10">
 				<p className="p-gap">

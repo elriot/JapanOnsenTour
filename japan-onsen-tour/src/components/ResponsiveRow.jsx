@@ -1,6 +1,6 @@
 function ResponsiveRow({ children, className = "" }) {
 	return (
-		<div className={`flex flex-col md:flex-row gap-4 md:gap-10 md:pr-3 ${className}`}>
+		<div className={`flex flex-col md:flex-row gap-4 md:gap-10 ${className}`}>
 			{children}
 		</div>
 	);

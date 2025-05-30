@@ -67,6 +67,15 @@ a, Link {
 	@apply mb-4 md:mb-5;
 }
 
+.highlight-text {
+	background: linear-gradient(
+  to right,
+  rgba(255, 255, 0, 0.6) 2%,
+  rgba(255, 255, 0, 0.2) 2%,
+  rgba(255, 255, 0, 0.2) 98%,
+  rgba(255, 255, 0, 0.6 ) 2% 
+);
+}
 /* .section-padding {
 	@apply p-5 md:p-10;
 } */
