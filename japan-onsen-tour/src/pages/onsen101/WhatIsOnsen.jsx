@@ -10,7 +10,7 @@ function WhatIsOnsen({className = ""}) {
   return (
 		<Section className={className}>
 			<Heading2 className="page-top-content">What is Onsen?</Heading2>
-			<div className="mb-10">
+			<div className="page-content-text mb-10">
 				<p className="mb-3">
 					Onsen is a cherished part of traditional Japanese culture that blends
 					geothermal bathing with rituals of relaxation and wellness.

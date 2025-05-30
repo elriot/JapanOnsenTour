@@ -11,7 +11,7 @@ function Etiquette({className=""}){
 		<Section className={` ${className}`} paddingTop="false">
 			<ResponsiveRow className="page-top-content">
 				<ResponsiveRowText>
-					<div className="pt-12">
+					<div className="page-content-text pt-12">
 						<Heading2 className="text-center pb-10">Onsen Etiquette</Heading2>
 						<p className="mb-4">
 							If you’re familiar with North American hot springs, there are a few important differences to keep in mind when visiting an onsen in Japan.

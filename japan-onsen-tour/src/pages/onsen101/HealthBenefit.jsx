@@ -7,7 +7,7 @@ function HealthBenefit({className=""}) {
 		<Section className={`${className}`}>
 			<ResponsiveRow className="page-top-content">
 				<Heading2 className="md:w-1/2">Health Benefit Of Onsen</Heading2>
-				<div className="md:w-1/2">
+				<div className="md:w-1/2 page-content-text">
 					<p className="mb-4">
 					Onsen have been enjoyed in Japan for centuries as a way to relax and
 					heal.

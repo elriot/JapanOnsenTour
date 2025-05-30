@@ -7,7 +7,7 @@ import Section from "../../components/Section";
 
 function PackingEssensial({className= ""}){
 	return (
-		<Section className={className}>
+		<Section className={`${className} page-content-text`}>
 			<Heading2 className="page-top-content" center="true">Packing Essentials for Your Onsen Trip</Heading2>
 			<p className="pb-15 text-center">
 				Preparing for an onsen trip is simple, but a few thoughtful choices can enhance your experience.
