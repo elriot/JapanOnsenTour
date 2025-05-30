@@ -57,7 +57,7 @@ function Navbar() {
 							{openMenu == 'onsen' && 
 								<DropdownMenu items={[
 									{ to: '/onsen', label: 'What is Onsen?' },
-									{ to: '/health', label: 'Health Benefit' }
+									{ to: '/health', label: 'Health Benefit' },
 									]}
 									onLinkClick={() => {setOpenMenu(null); setIsMobileMenuOpen(false);}}
 									className="header-menu-item-hover"
