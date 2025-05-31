@@ -113,7 +113,33 @@ function Navbar() {
 									className="header-menu-item-hover"  
 								/>
 							}
-            			</li>
+						</li>
+
+						<li className="relative">
+							<button
+								onClick={() => toggleMenu('tips')}
+								className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded header-menu-item-hover md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+							>
+								<p className={['/seasons', '/transportation','/guide', '/extra'].some(path => currentPath.includes(path)) ? "currentpage-underline" : ""}>
+									Onsen Travel Tips
+								</p>
+								<svg className="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+									<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+								</svg>
+							</button>
+
+							{openMenu == 'tips' && 
+								<DropdownMenu items={[
+										{ to: '/seasons', label: 'Best Seasons' },
+										{ to: '/transportation', label: 'Transportation' },
+										{ to: '/guide', label: 'Private Tour & Local Guide' },
+										{ to: '/extra', label: 'Small Extras' },
+									]}
+									onLinkClick={() => {setOpenMenu(null); setIsMobileMenuOpen(false);}}
+									className="header-menu-item-hover"  
+								/>
+							}
+						</li>
 					</ul>
 				</div>
 			</div>
