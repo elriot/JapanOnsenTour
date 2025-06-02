@@ -13,6 +13,7 @@ import KusatsuOnsenPage from "./pages/kusatsu/KusatsuOnsenPage";
 import BackToTopButton from "./components/BackToTopButton";
 import ArimaOnsenPage from "./pages/arima/ArimaOnsenPage";
 import GeroOnsenPage from "./pages/gero/GeroOnsenPage";
+import SeasonalPage from "./pages/seasonal/SeasonalPage";
 
 function App() {
   return (
@@ -35,12 +36,13 @@ function App() {
               <Route path="/kusatsu" element={<KusatsuOnsenPage />} />
 							<Route path="/arima" element={<ArimaOnsenPage />} />
 							<Route path="/gero" element={<GeroOnsenPage />} />
+							<Route path="/seasons" element={<SeasonalPage />} />
             </Routes>
           </main>
 
 					<BackToTopButton />
           {/* Footer */}
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </Router>
     </>
