@@ -1,5 +1,4 @@
 import ResponsiveRow from "../../components/ResponsiveRow";
-import ResponsiveRowImage from "../../components/ResponsiveRowImage";
 import ResponsiveRowText from "../../components/ResponsiveRowText";
 import Section from "../../components/Section";
 import tpImage from "../../images/transportation/tp_top.jpg";
