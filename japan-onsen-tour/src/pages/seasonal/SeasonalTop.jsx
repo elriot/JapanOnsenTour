@@ -10,7 +10,7 @@ function SeasonalTop({ className = "" }) {
   return (
     <div className={className}>
       <ResponsiveRow>
-        <ResponsiveRowText className="p-4 py-20 md:px-10">
+        <ResponsiveRowText className="p-4 py-20 md:px-10 md:py-60">
           <Heading2>Seasonal Highlights Across Japan’s Onsen Towns</Heading2>
           <p className="page-content-text">
             Japan’s Onsen are not just places to relax but also a way to
