@@ -1,9 +1,7 @@
 import Heading2 from "../../components/Heading2";
 import ResponsiveRow from "../../components/ResponsiveRow";
 import ResponsiveRowImage from "../../components/ResponsiveRowImage";
-import ResponsiveRowImageNotStretch from "../../components/ResponsiveRowImage\bNotStretch";
 import ResponsiveRowText from "../../components/ResponsiveRowText";
-import Section from "../../components/Section";
 import topImage from "../../images/seasonal/seasonal_top.jpg";
 
 function SeasonalTop({ className = "" }) {
