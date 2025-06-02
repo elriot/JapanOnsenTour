@@ -1,3 +1,4 @@
+import SeasonalSectionItem from "../../components/SeasonalSectionItem";
 import Section from "../../components/Section";
 import winterImg from "../../images/seasonal/seasonal_winter.jpeg";
 
@@ -20,6 +21,7 @@ function SeasonalWinter({ className = "" }) {
           title={item.title}
           content={item.content}
           accordionItems={item.accordionItems}
+					imagePosition="left"
         />
       ))}
     </Section>
