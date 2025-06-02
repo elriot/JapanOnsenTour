@@ -1,32 +1,27 @@
-import AccordionArrow from "../../components/AccordionArrow";
-import ResponsiveRow from "../../components/ResponsiveRow";
-import ResponsiveRowImage from "../../components/ResponsiveRowImage";
-import ResponsiveRowText from "../../components/ResponsiveRowText";
 import Section from "../../components/Section";
 import winterImg from "../../images/seasonal/seasonal_winter.jpeg";
 
 function SeasonalWinter({ className = "" }) {
-	const items = getItems();
+  const seasonalItems = [
+    {
+      imageSrc: winterImg,
+      title: "Winter (December to February)",
+      content: "Heavy snowfall makes winter onsen particularly memorable, especially when contrasted with the hot spring waters. There’s nothing quite like slipping into a steaming open-air bath as snowflakes drift from the sky.",
+      accordionItems: getItems(),
+    }
+  ];
+
   return (
     <Section className={className}>
-      <ResponsiveRow>
-
-        <ResponsiveRowImage src={winterImg} rounded="true" />
-
-        <ResponsiveRowText className="">
-          <p className="text-2xl p-gap">Winter (December to February)</p>
-          <p className="page-content-text py-10">
-            Heavy snowfall makes winter onsen particularly memorable, especially
-            when contrasted with the hot spring waters. There’s nothing quite
-            like slipping into a steaming open-air bath as snowflakes drift from
-            the sky.
-          </p>
-					<div className="page-content-text pb-10 md:pb-20">
-						<AccordionArrow items={items} />
-					</div>
-        </ResponsiveRowText>
-
-      </ResponsiveRow>
+      {seasonalItems.map((item, index) => (
+        <SeasonalSectionItem
+          key={index}
+          imageSrc={item.imageSrc}
+          title={item.title}
+          content={item.content}
+          accordionItems={item.accordionItems}
+        />
+      ))}
     </Section>
   );
 }
