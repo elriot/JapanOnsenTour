@@ -14,6 +14,7 @@ import BackToTopButton from "./components/BackToTopButton";
 import ArimaOnsenPage from "./pages/arima/ArimaOnsenPage";
 import GeroOnsenPage from "./pages/gero/GeroOnsenPage";
 import SeasonalPage from "./pages/seasonal/SeasonalPage";
+import TransportationPage from "./pages/transportation/TransportationPage";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
 							<Route path="/arima" element={<ArimaOnsenPage />} />
 							<Route path="/gero" element={<GeroOnsenPage />} />
 							<Route path="/seasons" element={<SeasonalPage />} />
+							<Route path="/transportation" element={<TransportationPage />} />
             </Routes>
           </main>
 
