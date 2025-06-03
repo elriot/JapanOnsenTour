@@ -15,6 +15,7 @@ import ArimaOnsenPage from "./pages/arima/ArimaOnsenPage";
 import GeroOnsenPage from "./pages/gero/GeroOnsenPage";
 import SeasonalPage from "./pages/seasonal/SeasonalPage";
 import TransportationPage from "./pages/transportation/TransportationPage";
+import LocalToursPage from "./pages/localtours/LocalToursPage";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
 							<Route path="/gero" element={<GeroOnsenPage />} />
 							<Route path="/seasons" element={<SeasonalPage />} />
 							<Route path="/transportation" element={<TransportationPage />} />
+							<Route path="/localtours" element={<LocalToursPage />} />
             </Routes>
           </main>
 

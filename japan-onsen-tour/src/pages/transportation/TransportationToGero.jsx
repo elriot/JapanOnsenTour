@@ -1,13 +1,14 @@
-import TransportationInfoBox from "../../components/TransfortationInfoBox";
+import OnsenInfoWithTwoTextBoxes from "../../components/OnsenInfoWithTwoTextBoxes";
 
 function TransportationToGero({ className = "" }) {
 	return (
-		<TransportationInfoBox
+		<OnsenInfoWithTwoTextBoxes
 			className={className} 
 			title="Gero Onsen"
 			subtitle="Gifu Prefecture"
 			description="Gentle rivers, open-air footbaths, and soft alkaline waters await."
 			rightContent={rightContent}
+			background="true"
 		/>
   );
 }

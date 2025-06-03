@@ -1,10 +1,10 @@
 import Section from "./Section";
 
-function TransportationInfoBox( {title, subtitle, description, rightContent, className = ""}) {
-
+function OnsenInfoWithTwoTextBoxes( {title, subtitle, description, rightContent, className = "", background="false"}) {
+	const bg = background === "true" ? "bg-gray-50 border-3 border-gray-200 rounded-lg" : "";
 	return (
     <Section className={`${className}`} paddingBottom="false" paddingTop="false">
-      <div className="flex flex-col bg-gray-50 border-3 border-gray-200 rounded-lg w-full md:flex-row ">
+      <div className={`flex flex-col ${bg} w-full md:flex-row`}>
         {/* left section (1/3) */}
         <div className="md:w-1/3 p-5 md:p-10 page-content-text space-y-2">
           <h2 className="text-xl font-bold">{title}</h2>
@@ -14,7 +14,7 @@ function TransportationInfoBox( {title, subtitle, description, rightContent, cla
           </p>
         </div>
 
-        {/* right section (2/4) */}
+        {/* right section (2/3) */}
         <div className="md:w-2/3 p-5 md:p-10 md:py-10 pb-10 page-content-text space-y-2">
           {rightContent}
         </div>
@@ -23,4 +23,4 @@ function TransportationInfoBox( {title, subtitle, description, rightContent, cla
 	);
 }
 
-export default TransportationInfoBox;
+export default OnsenInfoWithTwoTextBoxes;

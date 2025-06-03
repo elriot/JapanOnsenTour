@@ -132,7 +132,7 @@ function Navbar() {
 								<DropdownMenu items={[
 										{ to: '/seasons', label: 'Best Seasons' },
 										{ to: '/transportation', label: 'Transportation' },
-										{ to: '/guide', label: 'Private Tour & Local Guide' },
+										{ to: '/localtours', label: 'Private Tour & Local Guide' },
 										{ to: '/extra', label: 'Small Extras' },
 									]}
 									onLinkClick={() => {setOpenMenu(null); setIsMobileMenuOpen(false);}}

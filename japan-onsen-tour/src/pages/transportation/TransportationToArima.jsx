@@ -1,13 +1,14 @@
-import TransportationInfoBox from "../../components/TransfortationInfoBox";
+import OnsenInfoWithTwoTextBoxes from "../../components/OnsenInfoWithTwoTextBoxes";
 
 function TransportationToArima({ className = "" }) {
   return (
-    <TransportationInfoBox
+    <OnsenInfoWithTwoTextBoxes
       className={className}
       title="Arima Onsen"
       subtitle="Hyogo Prefecture"
       description="Golden springs in a quiet valley — surprisingly close to the city buzz."
       rightContent={rightContent}
+			background="true"
     />
   );
 }

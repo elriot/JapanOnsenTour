@@ -1,13 +1,14 @@
-import TransportationInfoBox from "../../components/TransfortationInfoBox";
+import OnsenInfoWithTwoTextBoxes from "../../components/OnsenInfoWithTwoTextBoxes";
 
 function TransportationToKusatus({ className = "" }) {
 	return (
-		<TransportationInfoBox
+		<OnsenInfoWithTwoTextBoxes
 			className={className} 
 			title="Kusatsu Onsen"
 			subtitle="Gunma Prefecture"
 			description="Volcanic waters in the Japanese Alps, just a few hours from Tokyo."
 			rightContent={rightContent}
+			background="true"
 		/>
   );
 }
