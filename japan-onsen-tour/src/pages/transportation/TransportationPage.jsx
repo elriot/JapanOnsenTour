@@ -1,4 +1,5 @@
 import Section from "../../components/Section";
+import TransportationSummaryTable from "./TransportationSummaryTable";
 import TransportationToArima from "./TransportationToArima";
 import TransportationToGero from "./TransportationToGero";
 import TransportationToKusatus from "./TransportationToKusatsu";
@@ -11,6 +12,7 @@ function TransportationPage({ className = "" }) {
 			<TransportationToKusatus className="pb-10"/>
 			<TransportationToArima className="pb-10"/>
 			<TransportationToGero/>
+			<TransportationSummaryTable/>
     </div>
   );
 }
