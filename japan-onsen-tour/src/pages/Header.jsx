@@ -15,7 +15,7 @@ function Navbar() {
 	};
 
 	return (
-		<nav className="page-content-text header-bg fixed w-full z-50">
+		<nav className="header-bg fixed w-full z-50">
 			<div className={`max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4`}>
 
 				{/* Title */}
