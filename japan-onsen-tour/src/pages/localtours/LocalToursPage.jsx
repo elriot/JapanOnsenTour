@@ -1,15 +1,18 @@
-import PageTopSectionWithImage from "../../components/PageTopSectionWithImage";
-import image from "../../images/localtours/tours_top.jpg";
+import LocalToursArima from "./LocalToursArima";
+import LocalToursGero from "./LocalToursGero";
+import LocalToursGuide from "./LocalToursGuide";
+import LocalToursKusatsu from "./LocalToursKusatsu";
+import LocalToursTop from "./LocatlToursTop";
 
 function LocalToursPage( {className = ""}){
 	return(
-		<PageTopSectionWithImage
-			title="Booking a Private Tour or Local Guides"
-			content="Japan’s famous hot spring towns are more than scenic backdrops, they’re a tapestry of tradition, local legends, and age-old rituals. While it’s possible to explore on your own, a knowledgeable local guide can transform a soak into a story. Whether you’re navigating complex Onsen etiquette, discovering hidden bathhouses, or weaving through atmospheric alleys, a guide adds color and context to your journey."
-			img={image}
-			alt="Japan traditional market image"
-			className={`${className} md:max-h-[800px] object-cover object-contain`}
-		/>
+		<div className={className}>
+			<LocalToursTop className=""/>
+			<LocalToursKusatsu className="pt-15 md:pt-25 pb-5 md:py-5"/>
+			<LocalToursArima className="py-5 md:py-5"/>
+			<LocalToursGero className="pt-5 md:pt-5 pb-20"/>
+			<LocalToursGuide className="bg-gray-100 pb-20"/>
+		</div>
 	);
 }
 export default LocalToursPage;
