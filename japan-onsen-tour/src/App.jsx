@@ -8,7 +8,6 @@ import Etiquette from "./pages/beforeyougo/Etiquette";
 import Tattoo from "./pages/beforeyougo/Tattoo";
 import RyokanHotel from "./pages/beforeyougo/RyokanHotel";
 import PackingEssensial from "./pages/beforeyougo/PackingEssensial";
-import Footer from "./components/Footer";
 import KusatsuOnsenPage from "./pages/kusatsu/KusatsuOnsenPage";
 import BackToTopButton from "./components/BackToTopButton";
 import ArimaOnsenPage from "./pages/arima/ArimaOnsenPage";
