@@ -22,6 +22,7 @@ function SeasonalFall({ className = "" }) {
           content={item.content}
           accordionItems={item.accordionItems}
 					imagePosition="right"
+					sourceText="Shutterstock.com/ @Dpongvit"
         />
       ))}
     </Section>

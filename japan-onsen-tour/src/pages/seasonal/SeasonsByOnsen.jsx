@@ -16,18 +16,21 @@ function SeasonsByOnsen({ className = "" }) {
 						img={kusatuImg}
             seasons="Winter/Fall"
             description="Snowy charm, fall colors, highland cool"
+						sourceText="visit-gunma.jp"
           />
           <SeasonsOnsenCard
             title="Arima"
 						img={arimaImg}
             seasons="Winter/Spring"
             description="Elegant atmosphere, seasonal views"
+						sourceText="travel.gaijinpot.com"
           />
           <SeasonsOnsenCard
             title="Gero"
 						img={geroImg}
             seasons="Spring/Fall"
             description="Riverside blossoms, foliage reflections"
+						sourceText="fun-japan.jp"
           />
         </ResponsiveRow>
       </Section>

@@ -22,6 +22,7 @@ function SeasonalSpring({ className = "" }) {
           content={item.content}
           accordionItems={item.accordionItems}
 					imagePosition="right"
+					sourceText="kobe.travel.coocan.jp"
         />
       ))}
     </Section>

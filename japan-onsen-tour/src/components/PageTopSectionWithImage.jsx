@@ -3,7 +3,7 @@ import ResponsiveRow from "./ResponsiveRow";
 import ResponsiveRowImage from "./ResponsiveRowImage";
 import ResponsiveRowText from "./ResponsiveRowText";
 
-function PageTopSectionWithImage({ title, content, img, alt="image", className=""}) {
+function PageTopSectionWithImage({ title, content, img, alt="image", className="", sourceText=""}) {
   return (
     <ResponsiveRow className={`${className}`}>
 			<ResponsiveRowText className="p-4 py-20 md:px-10 md:py-60 order-1 md:order-1">
@@ -16,6 +16,7 @@ function PageTopSectionWithImage({ title, content, img, alt="image", className="
         src={img}
         alt={alt}
         className="order-2 md:order-2"
+				sourceText={sourceText}
       />
     </ResponsiveRow>
   );

@@ -3,12 +3,12 @@ import ResponsiveRowImage from "./ResponsiveRowImage";
 import ResponsiveRowText from "./ResponsiveRowText";
 import AccordionArrow from "./AccordionArrow";
 
-function SeasonalSectionItem({ imageSrc, title, content, accordionItems, imagePosition = "left" }) {
+function SeasonalSectionItem({ imageSrc, title, content, accordionItems, imagePosition = "left", sourceText=""}) {
   const isImageLeft = imagePosition === "left";
 
   return (
     <ResponsiveRow className={`flex-col md:flex-row ${isImageLeft ? "" : "md:flex-row-reverse"}`}>
-      <ResponsiveRowImage src={imageSrc} rounded="true" />
+      <ResponsiveRowImage src={imageSrc} rounded="true" sourceText={sourceText}/>
       
       <ResponsiveRowText>
         <p className="text-2xl p-gap">{title}</p>

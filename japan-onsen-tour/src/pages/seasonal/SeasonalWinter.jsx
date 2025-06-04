@@ -22,6 +22,7 @@ function SeasonalWinter({ className = "" }) {
           content={item.content}
           accordionItems={item.accordionItems}
 					imagePosition="left"
+					sourceText="uchijapan.com"
         />
       ))}
     </Section>
