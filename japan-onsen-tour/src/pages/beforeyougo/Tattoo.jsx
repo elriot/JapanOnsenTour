@@ -3,7 +3,7 @@ import Heading2 from "../../components/Heading2";
 import ResponsiveRow from "../../components/ResponsiveRow";
 import ResponsiveRowText from "../../components/ResponsiveRowText";
 import Section from "../../components/Section";
-import tattooImg from "../../images/tattoo.jpg";
+import tattooImg from "../../images/beforeyougo/tattoo.png";
 
 function Tattoo({className=""}){
 	return (

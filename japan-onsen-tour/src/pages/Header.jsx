@@ -15,7 +15,7 @@ function Navbar() {
 	};
 
 	return (
-		<nav className="page-content-text header-bg fixed w-full z-50">
+		<nav className="header-bg fixed w-full z-50">
 			<div className={`max-w-7xl flex flex-wrap items-center justify-between mx-auto p-4`}>
 
 				{/* Title */}
@@ -56,8 +56,8 @@ function Navbar() {
 
 							{openMenu == 'onsen' && 
 								<DropdownMenu items={[
-									{ to: '/onsen', label: 'What is Onsen?' },
-									{ to: '/health', label: 'Health Benefit' },
+									{ to: '/onsen', label: 'Onsen Basic' },
+									{ to: '/health', label: 'Health Benefits' },
 									]}
 									onLinkClick={() => {setOpenMenu(null); setIsMobileMenuOpen(false);}}
 									className="header-menu-item-hover"
@@ -79,10 +79,10 @@ function Navbar() {
 
 							{openMenu == 'beforeYouGo' && 
 								<DropdownMenu items={[
-										{ to: '/etiquette', label: 'Onsen Etiquette' },
-										{ to: '/tattoo', label: 'Things to Know About Tattoos' },
-										{ to: '/accomodation', label: 'Hotel & Ryokan Types' },
-										{ to: '/packing', label: 'Packing Essentials' },
+										{ to: '/etiquette', label: 'Etiquette Guide' },
+										{ to: '/tattoo', label: 'Tattoos & Onsen' },
+										{ to: '/accomodation', label: 'Ryokan vs. Hotel' },
+										{ to: '/packing', label: 'Packing Tips' },
 									]}
 									onLinkClick={() => {setOpenMenu(null); setIsMobileMenuOpen(false);}}
 									className="header-menu-item-hover"  
@@ -96,7 +96,7 @@ function Navbar() {
 								className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded header-menu-item-hover md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
 							>
 								<p className={['/kusatsu', '/arima','/gero'].some(path => currentPath.includes(path)) ? "currentpage-underline" : ""}>
-									Top 3 Onsen Town
+									Top 3 Onsen Towns
 								</p>
 								<svg className="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
 									<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
@@ -113,7 +113,33 @@ function Navbar() {
 									className="header-menu-item-hover"  
 								/>
 							}
-            			</li>
+						</li>
+
+						<li className="relative">
+							<button
+								onClick={() => toggleMenu('tips')}
+								className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded header-menu-item-hover md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
+							>
+								<p className={['/seasons', '/transportation','/localtours', '/extras'].some(path => currentPath.includes(path)) ? "currentpage-underline" : ""}>
+									Onsen Travel Tips
+								</p>
+								<svg className="w-2.5 h-2.5 ms-2.5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+									<path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4" />
+								</svg>
+							</button>
+
+							{openMenu == 'tips' && 
+								<DropdownMenu items={[
+										{ to: '/seasons', label: 'Seasonal Highlights' },
+										{ to: '/transportation', label: 'Transportation' },
+										{ to: '/localtours', label: 'Local Tours' },
+										{ to: '/extras', label: 'Travel Extras' },
+									]}
+									onLinkClick={() => {setOpenMenu(null); setIsMobileMenuOpen(false);}}
+									className="header-menu-item-hover"  
+								/>
+							}
+						</li>
 					</ul>
 				</div>
 			</div>

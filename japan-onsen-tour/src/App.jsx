@@ -8,11 +8,14 @@ import Etiquette from "./pages/beforeyougo/Etiquette";
 import Tattoo from "./pages/beforeyougo/Tattoo";
 import RyokanHotel from "./pages/beforeyougo/RyokanHotel";
 import PackingEssensial from "./pages/beforeyougo/PackingEssensial";
-import Footer from "./components/Footer";
 import KusatsuOnsenPage from "./pages/kusatsu/KusatsuOnsenPage";
 import BackToTopButton from "./components/BackToTopButton";
 import ArimaOnsenPage from "./pages/arima/ArimaOnsenPage";
 import GeroOnsenPage from "./pages/gero/GeroOnsenPage";
+import SeasonalPage from "./pages/seasonal/SeasonalPage";
+import TransportationPage from "./pages/transportation/TransportationPage";
+import LocalToursPage from "./pages/localtours/LocalToursPage";
+import TravelExtrasPage from "./pages/travelextras/TravelExtrasPage";
 
 function App() {
   return (
@@ -35,12 +38,16 @@ function App() {
               <Route path="/kusatsu" element={<KusatsuOnsenPage />} />
 							<Route path="/arima" element={<ArimaOnsenPage />} />
 							<Route path="/gero" element={<GeroOnsenPage />} />
+							<Route path="/seasons" element={<SeasonalPage />} />
+							<Route path="/transportation" element={<TransportationPage />} />
+							<Route path="/localtours" element={<LocalToursPage />} />
+							<Route path="/extras" element={<TravelExtrasPage />} />
             </Routes>
           </main>
 
 					<BackToTopButton />
           {/* Footer */}
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </Router>
     </>

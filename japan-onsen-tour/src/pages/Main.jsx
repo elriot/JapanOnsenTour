@@ -1,9 +1,11 @@
+import Footer from "../components/Footer";
 import Section from "../components/Section";
 import img from "../images/common/onsen_00.jpg";
 
 function Main() {
 
 	return (
+		<>
 		<Section className="relative h-screen flex flex-col justify-center items-center overflow-hidden">
 			<img
 				src={img}
@@ -19,6 +21,8 @@ function Main() {
 				</h1>
 			</div>
 		</Section>
+		<Footer/>
+		</>
 	);
 }
 

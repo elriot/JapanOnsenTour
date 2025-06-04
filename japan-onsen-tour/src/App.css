@@ -60,7 +60,7 @@ a, Link {
 	text-decoration: underline;
 }
 .page-content-text {
-	@apply text-lg;
+	@apply text-base md:text-lg;
 }
 
 .p-gap {
