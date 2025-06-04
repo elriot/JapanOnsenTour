@@ -14,7 +14,12 @@ function TransportationTop({className = ""}) {
 					In Japan, getting to an Onsen is more than just a commute, it’s part of the ritual. Whether you're gliding through the countryside on a high-speed bullet train or winding up a forested mountain road, the trip sets the stage for the serenity that awaits. Let us walk you through the smart, scenic, and seamless ways to reach Japan’s top hot spring destinations.
 				</ResponsiveRowText>
 			</ResponsiveRow>
-			<img src={tpImage} className="rounded-lg"/>
+
+			<div className="relative w-full rounded-lg overflow-hidden">
+        <img src={tpImage} alt="train" className="w-full h-full object-cover" />
+        <p className="source-text-inside">{`Image Source : japaninsides.com`}</p>
+      </div>
+			{/* <img src={tpImage} className="rounded-lg"/> */}
 		</Section>
 	);
 }

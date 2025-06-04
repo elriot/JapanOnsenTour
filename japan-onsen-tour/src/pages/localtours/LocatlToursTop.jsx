@@ -10,6 +10,7 @@ function LocalToursTop( {className = "" }) {
 			img={image}
 			alt="Japan traditional market image"
 			className={`${className} md:max-h-[800px] object-cover object-contain`}
+			sourceText="unsplash.com/ @chrisyangchrisfilm"
 		/>
 	);
 }
