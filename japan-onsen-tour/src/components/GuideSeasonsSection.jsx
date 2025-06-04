@@ -14,7 +14,7 @@ function GuideReasonsSection({ title, items = [], className = "" }) {
           {items.map(({ heading, description }, index) => (
             <div key={index}>
               <h3 className="text-lg font-semibold mb-1">{heading}</h3>
-              <p className="text-gray-700">{description}</p>
+              <p className="">{description}</p>
             </div>
           ))}
         </div>
