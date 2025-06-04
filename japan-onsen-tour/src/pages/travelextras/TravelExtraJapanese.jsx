@@ -3,7 +3,7 @@ import Section from "../../components/Section";
 
 function TravelExtrasJapanese( { className = "" }) {
 	return (
-		<Section className={className} paddingBottom="false" paddingTop="false">
+		<Section className={className} paddingBottom="false" paddingTop="true">
 			<JapanesePhraseTable
 				intro="When travelling to any new country, foreign languages can be intimidating. Here are some common Japanese phrases that will help you on your travel:"
 				phrases={phraseData1} 

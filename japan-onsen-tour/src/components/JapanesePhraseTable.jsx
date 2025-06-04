@@ -2,7 +2,7 @@ import Section from "./Section";
 
 function JapanesePhraseTable({ className="", intro,  phrases = [] }) {
   return (
-		<Section className={`${className} w-full mx-auto lg:w-4/5 page-content-text space-y-5`} paddingBottom="false">
+		<div className={`${className} w-full mx-auto lg:w-4/5 page-content-text space-y-5`} paddingBottom="false">
 			<p className="page-content-text">{intro}</p>
 			<table className="w-full mx-auto table-auto border-collapse border border-gray-300">
       <thead className="bg-gray-100">
@@ -22,7 +22,7 @@ function JapanesePhraseTable({ className="", intro,  phrases = [] }) {
         ))}
       </tbody>
     </table>
-		</Section>
+		</div>
   );
 }
 
