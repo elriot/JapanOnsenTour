@@ -21,7 +21,7 @@ function Navbar() {
 				{/* Title */}
 				<Link to="/" className="flex items-center space-x-3 ">
 					<span className="self-center text-2xl font-semibold whitespace-nowrap text-black no-underline">
-						Japan Onsen Tour
+						Japan Onsen Tour Guide
 					</span>
 				</Link>
 
@@ -30,7 +30,7 @@ function Navbar() {
 
 				{/* Menu */}
 				<div className={`${isMobileMenuOpen ? 'block' : 'hidden'} w-full md:block md:w-auto `} id="navbar-dropdown">
-					<ul className="flex flex-col font-medium header-menu-item-bg p-2 md:p-0 mt-4 border border-gray-300 rounded-lg md:space-x-8 md:flex-row md:mt-0 md:border-0">
+					<ul className="flex flex-col font-medium header-menu-item-bg p-2 md:p-0 mt-4 border border-gray-300 rounded-lg ƒ md:flex-row md:mt-0 md:border-0">
 						<li>
 							<NavbarMenuItem 
 								to="/" 
