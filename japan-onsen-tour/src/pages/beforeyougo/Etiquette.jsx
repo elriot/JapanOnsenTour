@@ -43,7 +43,7 @@ function Etiquette({ className = "" }) {
           alt="onsen manner image"
 					sourceText="Kashiwaya Magazine (kashiwaya.org)"
 					sourceInside={false}
-					textColor="black"
+					textColor="true"
         />
       </ResponsiveRow>
     </Section>

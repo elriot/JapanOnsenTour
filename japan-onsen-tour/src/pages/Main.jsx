@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import ImageWithSourceText from "../components/ImageWithSourceText";
 import Section from "../components/Section";
 import img from "../images/common/onsen_00.jpg";
+import MainImageWithSourceText from "../components/MainImageWithSourceText";
 
 function Main() {
   return (
@@ -13,7 +14,7 @@ function Main() {
 				alt="img"
 				className="absolute inset-0 w-full h-full object-cover z-0"
 			/> */}
-        <ImageWithSourceText
+        <MainImageWithSourceText
           src={img}
           alt="img"
           textColor="white"
