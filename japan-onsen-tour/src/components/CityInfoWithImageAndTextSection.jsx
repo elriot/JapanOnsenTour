@@ -1,3 +1,4 @@
+import ImageWithSourceText from "./ImageWithSourceText";
 import ResponsiveRow from "./ResponsiveRow";
 import Section from "./Section";
 
@@ -9,7 +10,8 @@ function CityInfoWithImageAndText({
   textContent,
   paddingSize = 10,
 	half = "false",
-	imageLeft="true"
+	imageLeft="true",
+	sourceText=""
 }) {
   // const mdPaddingClass = `md:pl-${paddingSize} md:pr-${paddingSize}`;
 	const contentWidthRatio1 = half === "true" ? "md:w-1/2" : "md:w-2/5";
@@ -25,12 +27,21 @@ function CityInfoWithImageAndText({
         {/* Image */}
 				{ imageLeft === "true" ? (
 					<>
-						<div className={`${contentWidthRatio1} flex rounded-lg overflow-hidden`}>
-							<img
+						<div className={`${contentWidthRatio1} flex overflow-hidden`}>
+							<ImageWithSourceText
 								src={imageSrc}
 								alt={imageAlt}
 								className="w-full h-full object-cover"
+								sourceText={sourceText}
+								sourceInside={true}
+								textColor="white"
+								rounded={true}
 							/>
+							{/* <img
+								src={imageSrc}
+								alt={imageAlt}
+								className="w-full h-full object-cover"
+							/> */}
 						</div>
 						<div className={contentWidthRatio2}>{textContent}</div>
 					</>

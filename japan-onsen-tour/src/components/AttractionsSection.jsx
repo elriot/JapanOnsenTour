@@ -1,5 +1,6 @@
 import Section from "./Section";
 import ResponsiveRow from "./ResponsiveRow";
+import ImageWithSourceText from "./ImageWithSourceText";
 
 function AttractionsSection({
   className = "",
@@ -16,12 +17,19 @@ function AttractionsSection({
       <ResponsiveRow className={`items-stretch gap-4 md:gap-8`}>
         {/* Image (세로 높이 텍스트에 맞춤) */}
         <div className="md:w-2/5 flex rounded-lg overflow-hidden">
-          <img
+				<ImageWithSourceText
+					src={imageSrc}
+					alt={imageAlt}
+					className="w-full h-full object-cover"
+					style={{ objectFit: "cover" }} 
+					sourceText="www.town.kusatsu.gunma.jp"
+				/>
+          {/* <img
             src={imageSrc}
             alt={imageAlt}
             className="w-full h-full object-cover"
             style={{ objectFit: "cover" }} // 추가로 CSS 조정 가능
-          />
+          /> */}
         </div>
 
         {/* Text */}
