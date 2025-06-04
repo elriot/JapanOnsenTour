@@ -1,17 +1,32 @@
-function FullWidthImage({src, alt="", className="", fullWidth = "false"}){
-	const extraSettting = fullWidth === "true" ? "w-full h-auto" : "lg:max-w-xl";
+import ImageWithSourceText from "./ImageWithSourceText";
 
-	return(
-		<div className={`w-full flex justify-center items-center ${className}`}>
-			{/* <img src={src} alt={alt} className="w-full h-auto max-h-[80vh] object-contain"/> */}
-			<img src={src} alt={alt} className={`object-contain ${extraSettting}`}/>
-			{/* <img 
-				src={src} 
-				alt={alt} 
-				className="w-2/3 h-auto max-h-[100vh] object-contain"
-			/> */}
-		</div>
-	);
+function FullWidthImage({
+  src,
+  alt = "",
+  className = "",
+  fullWidth = "false",
+  sourceText = "",
+  sourceInside = false,
+  textColor = "black",
+  overlay = 0,
+  position = "bottom-right"
+}) {
+  const extraSetting = fullWidth === "true" ? "w-full h-auto" : "lg:max-w-xl";
+
+  return (
+    <div className={`w-full flex justify-center items-center ${className}`}>
+      <ImageWithSourceText
+        src={src}
+        alt={alt}
+        className={`object-contain ${extraSetting}`}
+        sourceText={sourceText}
+        sourceInside={sourceInside}
+        textColor={textColor}
+        overlay={overlay}
+        position={position}
+      />
+    </div>
+  );
 }
 
 export default FullWidthImage;
