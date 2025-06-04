@@ -17,10 +17,11 @@ function Main() {
           src={img}
           alt="img"
           textColor="white"
-          text="Image Source : unsplash.com /@pafuxu (Kouji Tsuru)"
+          sourceText="unsplash.com /@pafuxu (Kouji Tsuru)"
           sourceInside={true}
           className="absolute inset-0"
           overlay={30}
+					relativeParent={false}
         />
 
         <div className="z-1 text-center p-4">

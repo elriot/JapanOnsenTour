@@ -11,7 +11,13 @@ function WhatIsOnsen({ className = "" }) {
       <Heading2 className="page-top-content">What is Onsen?</Heading2>
 
       <ResponsiveRow>
-        <ResponsiveRowImage src={onsenImg} alt="onsen" rounded="true"/>
+        <ResponsiveRowImage 
+					src={onsenImg} 
+					alt="onsen" 
+					rounded="true" 
+					sourceText="travel.rakuten.com"
+				/>
+
         <ResponsiveRowText className="pt-10 md:pt-0">
           <div className="page-content-text mb-10">
             <p className="p-gap">

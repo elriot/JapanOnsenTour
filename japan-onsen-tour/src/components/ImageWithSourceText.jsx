@@ -1,12 +1,13 @@
 function ImageWithSourceText({
   src,
   alt = "",
-  text = "",
-  sourceInside = false, // true: 이미지 위에 오버레이, false: 이미지 아래 텍스트
-  position = "bottom-right", // overlay가 true일 경우 위치: "top-left" | "top-right" | "bottom-left" | "bottom-right"
-  textColor = "white", // "white" or "black"
+  sourceText = "",
+  sourceInside = false,
+  position = "bottom-right",
+  textColor = "white",
   className = "",
   overlay = 0,
+  relativeParent = true, 
 }) {
   const positionClass = {
     "top-left": "top-2 left-2",
@@ -16,8 +17,9 @@ function ImageWithSourceText({
   }[position];
 
   const colorClass = textColor === "white" ? "text-white" : "text-black";
+
   return (
-    <div className={`flex object-cover ${className}`}>
+    <div className={`${relativeParent ? "relative" : ""} flex object-cover overflow-hidden  ${className}`}>
       {overlay > 0 && (
         <div
           className="absolute inset-0 bg-gray-800"
@@ -25,15 +27,14 @@ function ImageWithSourceText({
         ></div>
       )}
       <img src={src} alt={alt} className="w-full h-full object-cover" />
-
       {sourceInside ? (
         <div
-          className={`absolute ${positionClass} ${colorClass} text-sm bg-black/50 px-2 py-1 rounded`}
+          className={`absolute ${positionClass} ${colorClass} text-xs md:text-sm bg-black/50 px-2 py-1 rounded`}
         >
-          {text}
+          {`Image Source : ${sourceText}`}
         </div>
       ) : (
-        <p className={`mt-2 ${colorClass}`}>{text}</p>
+        <p className={`mt-2 ${colorClass}`}>{sourceText}</p>
       )}
     </div>
   );
