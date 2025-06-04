@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
+import Footer from "./Footer";
 import ImageWithSourceText from "../components/ImageWithSourceText";
 import Section from "../components/Section";
 import img from "../images/common/onsen_00.jpg";
@@ -8,7 +8,7 @@ import MainImageWithSourceText from "../components/MainImageWithSourceText";
 function Main() {
   return (
     <>
-      <Section className="relative flex flex-col justify-center items-center min-h-[80vh] h-auto overflow-hidden">
+      <Section className="relative flex flex-col justify-center items-center min-h-[80vh] md:min-h-[90vh] h-auto overflow-hidden">
         {/* <img
 				src={img}
 				alt="img"
@@ -34,26 +34,26 @@ function Main() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 text-center">
           <Link
             to="/kusatsu"
             className="z-10 bg-black !text-white !font-bold text-lg rounded-full text-center px-8 py-2"
           >
-            KUSATSU
+            KUSATSU<br/>ONSEN
           </Link>
 
           <Link
             to="/arima"
             className="z-10 bg-black !text-white !font-bold text-lg rounded-full text-center px-8 py-2"
           >
-            ARIMA
+            ARIMA<br/>ONSEN
           </Link>
 
           <Link
             to="/gero"
             className="z-10 bg-black !text-white !font-bold text-lg rounded-full text-center px-8 py-2"
           >
-            GERO
+            GERO<br/>ONSEN
           </Link>
         </div>
       </Section>
