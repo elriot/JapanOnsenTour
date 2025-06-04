@@ -22,7 +22,7 @@ function Main() {
           sourceInside={true}
           className="absolute inset-0"
           overlay={30}
-					relativeParent={false}
+          relativeParent={false}
         />
 
         <div className="z-1 text-center p-4">
@@ -35,25 +35,26 @@ function Main() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
-          <button className="z-10 bg-black text-white text-lg rounded-full text-center px-8 py-2">
-            <Link to="/kusatsu" className="!text-white !font-bold">
-              KUSATSU
+          <Link
+            to="/kusatsu"
+            className="z-10 bg-black !text-white !font-bold text-lg rounded-full text-center px-8 py-2"
+          >
+            KUSATSU
+          </Link>
 
-            </Link>
-          </button>
+          <Link
+            to="/arima"
+            className="z-10 bg-black !text-white !font-bold text-lg rounded-full text-center px-8 py-2"
+          >
+            ARIMA
+          </Link>
 
-          <button className="z-10 bg-black text-white text-lg rounded-full text-center px-8 py-2">
-            <Link to="/arima" className="!text-white !font-bold">
-              ARIMA
-
-            </Link>
-          </button>
-
-					<button className="z-10 bg-black text-white text-lg rounded-full text-center px-8 py-2">
-            <Link to="/gero" className="!text-white !font-bold">
-              GERO
-            </Link>
-          </button>
+          <Link
+            to="/gero"
+            className="z-10 bg-black !text-white !font-bold text-lg rounded-full text-center px-8 py-2"
+          >
+            GERO
+          </Link>
         </div>
       </Section>
       <Footer />
