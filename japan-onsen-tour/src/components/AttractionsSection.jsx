@@ -9,6 +9,7 @@ function AttractionsSection({
   imageAlt = "",
   content,
   paddingSize = 5,
+	sourceText=""
 }) {
   const mdPaddingClass = `md:pl-${paddingSize} md:pr-${paddingSize}`;
 
@@ -22,7 +23,7 @@ function AttractionsSection({
 					alt={imageAlt}
 					className="w-full h-full object-cover"
 					style={{ objectFit: "cover" }} 
-					sourceText="www.town.kusatsu.gunma.jp"
+					sourceText={sourceText}
 				/>
           {/* <img
             src={imageSrc}

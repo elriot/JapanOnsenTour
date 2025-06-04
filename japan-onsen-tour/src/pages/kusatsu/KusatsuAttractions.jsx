@@ -43,6 +43,7 @@ function KusatsuAttractions({ className = "" }) {
       imageSrc={img}
       imageAlt="onsen"
       paddingSize={paddingSize}
+			sourceText="www.town.kusatsu.gunma.jp"
       content={
         <>
           <div

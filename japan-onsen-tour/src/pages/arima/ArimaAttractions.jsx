@@ -42,6 +42,7 @@ function ArimaAttractions({ className = "" }) {
       title="Other Attractions Around Arima"
       imageSrc={img}
       imageAlt="onsen"
+			sourceText="www.feel-kobe.jp"
       paddingSize={paddingSize}
       content={
         <>

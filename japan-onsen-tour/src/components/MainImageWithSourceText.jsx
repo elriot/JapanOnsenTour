@@ -29,7 +29,7 @@ function MainImageWithSourceText({
       <img src={src} alt={alt} className="w-full h-full object-cover" />
       {sourceInside ? (
         <div
-          className={`absolute ${positionClass} ${colorClass} text-xs md:text-sm bg-black/50 px-2 py-1 rounded`}
+          className={`source-text-inside ${positionClass} ${colorClass}`}
         >
           {`Image Source : ${sourceText}`}
         </div>

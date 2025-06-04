@@ -29,7 +29,7 @@ function ImageWithSourceText({
       )}
       <img src={src} alt={alt} className={imgClass} />
       <div
-        className={`absolute ${positionClass} ${colorClass} text-xs md:text-sm bg-black/40 px-2 py-1 rounded`}
+        className={`source-text-inside ${positionClass} ${colorClass}`}
       >
         {`Image Source : ${sourceText}`}
       </div>
