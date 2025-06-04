@@ -2,7 +2,7 @@ function Heading2({children, className = "", center="false"}){
 	const extraClass = center === "true" ? "text-center" : "";
 	
 	return (
-		<h2 className={`text-3xl font-bold mb-15 ${className} ${extraClass}`}>
+		<h2 className={`${className} ${extraClass} text-3xl font-bold pb-15 `}>
 			{children}
 		</h2>
 	);
