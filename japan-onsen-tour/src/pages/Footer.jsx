@@ -4,13 +4,13 @@ function Footer() {
       <div className="mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
         {/* Left Column - Title & Description */}
         <div className="text-left space-y-2">
-          <h2 className="text-xl font-bold">Japan Onsen Tour Guide</h2>
-          <p className="text-sm">A Journey Through Japan’s Top 3 Hot Springs</p>
-          <p className="text-sm">© 2025 Kawaii Onigiri. All Rights Reserved.</p>
+          <h2 className="text-xl md:text-2xl font-bold">Japan Onsen Tour Guide</h2>
+          <p className="text-sm md:text-base">A Journey Through Japan’s Top 3 Hot Springs</p>
+          <p className="text-sm md:text-base">© 2025 Kawaii Onigiri. All Rights Reserved.</p>
         </div>
 
         {/* Right Column - Context Description */}
-        <div className="md:text-right space-y-2 text-sm">
+        <div className="md:text-right space-y-2 text-sm md:text-base">
           <p>Copyright Page: © 2025 Kawaii Onigiri. All Rights Reserved</p>
           <p>Revision Date: Last Revised: May 2025</p>
         </div>
