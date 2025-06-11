@@ -22,6 +22,7 @@ function SeasonalSummer({ className = "" }) {
           content={item.content}
           accordionItems={item.accordionItems}
 					imagePosition="left"
+					sourceText="tokomori.com"
         />
       ))}
     </Section>

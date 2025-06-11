@@ -8,6 +8,7 @@ function GeroCityOverviewSection({ className = "" }) {
         title="City Overview"
         imageSrc={overviewImg}
         imageAlt="Gero Onsen"
+				sourceText="onsenista.com"
         textContent={
           <div className="page-content-text">
             <p className="p-gap">

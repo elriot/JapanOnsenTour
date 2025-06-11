@@ -43,6 +43,7 @@ function GeroAttractions({ className = "" }) {
       imageSrc={img}
       imageAlt="onsen"
       paddingSize={paddingSize}
+			sourceText="www.gero-gassho.jp"
       content={
         <>
           <div

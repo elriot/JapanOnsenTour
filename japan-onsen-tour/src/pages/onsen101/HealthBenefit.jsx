@@ -1,4 +1,5 @@
 import Heading2 from "../../components/Heading2";
+import ImageWithSourceText from "../../components/ImageWithSourceText";
 import ResponsiveRow from "../../components/ResponsiveRow";
 import Section from "../../components/Section";
 import img from "../../images/onsen101/onsen_water.jpg";
@@ -8,7 +9,15 @@ function HealthBenefit({ className = "" }) {
     <Section className={`${className} md:px-40`}>
       <Heading2 className="md:w-1/2">Health Benefit Of Onsen</Heading2>
 			<div className="pb-10 md:pb-20 flex justify-center">
-				<img src={img} alt="onsen water" className="rounded-lg w-full max-w-xl md:max-w-4xl"/>
+				<ImageWithSourceText 
+					src={img} 
+					alt="onsen water"
+					rounded="true" 
+					className="rounded-lg w-full "
+					sourceText="Yahoo! JAPAN News(news.yahoo.co.jp)"
+					sourceInside={true}
+				/>
+				{/* <img src={img} alt="onsen water" className="rounded-lg w-full max-w-xl md:max-w-4xl"/> */}
 			</div>
       <div className="page-content-text md:pb-20">
         <p className="p-gap">

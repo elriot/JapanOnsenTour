@@ -11,6 +11,7 @@ function KusatsuCityOverviewSection({ className = "" }) {
       <CityInfoWithImageAndText
         className={`${className} bg-gray-100`}
         title="City Overview"
+				sourceText="rurubu.jp/andmore"
         imageSrc={overviewImg}
         imageAlt="Kusatsu Onsen"
         textContent={

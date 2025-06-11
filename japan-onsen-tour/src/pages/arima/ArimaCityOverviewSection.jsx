@@ -8,6 +8,7 @@ function ArimaCityOverviewSection({ className = "" }) {
         title="City Overview"
         imageSrc={overviewImg}
         imageAlt="Arima Onsen"
+				sourceText="mimihan.tw/tag/有馬溫泉"
         textContent={
           <div className="page-content-text">
             <p className="p-gap">

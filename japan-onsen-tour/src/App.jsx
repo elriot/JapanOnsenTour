@@ -22,7 +22,6 @@ function App() {
     <>
       <Router basename="/JapanOnsenTour">
         <div className="flex flex-col min-h-screen">
-          {/* Header는 Routes 외부에 두는 게 좋아 */}
           <Header />
 
           {/* Main Content */}

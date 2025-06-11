@@ -9,6 +9,7 @@ function KusatsuUniqueSpringSection({ className = "" }) {
       title="The Unique Spring of Kusatsu"
       imageSrc={img}
       imageAlt="Kusatsu Onsen"
+			sourceText="setsulog.jp/kusatus-onsen-yubatake-sensui"
       textContent={
         <div className="page-content-text">
 					<p className="font-semibold text-2xl mb-4">Sulfur-Rich, High-Temperature Waters</p>

@@ -11,6 +11,7 @@ function SeasonalTop({ className = "" }) {
             unique experience, with winter creating a dramatic contrast against
             snow and spring and fall providing picturesque backdrops."
 				img={topImage}
+				sourceText="unsplash.com / @gronemo"
 			>
 			</PageTopSectionWithImage>
       {/* <ResponsiveRow>

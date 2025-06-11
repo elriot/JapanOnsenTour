@@ -11,6 +11,7 @@ function GeroUniqueSpringSection({ className = "" }) {
         title="The Unique Spring of Arima"
         imageSrc={geroImg}
         imageAlt="gero onsen"
+				sourceText="www.diamond-s.co.jp"
         paddingSize={0}
         textContent={
           <div className="page-content-text">

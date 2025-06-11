@@ -43,19 +43,15 @@ function KusatsuAttractions({ className = "" }) {
       imageSrc={img}
       imageAlt="onsen"
       paddingSize={paddingSize}
+			sourceText="www.town.kusatsu.gunma.jp"
       content={
         <>
           <div
             style={{
               maxWidth: "900px",
-              //backgroundColor: "rgba(255, 255, 255, 0.9)",
-              // padding: "20px",
               borderRadius: "8px",
             }}
           >
-            {/* <h2 className="text-2xl font-semibold mb-4">
-              Other Attractions Around Kusatsu
-            </h2> */}
             <Accordion items={accordionItems} />
           </div>
         </>

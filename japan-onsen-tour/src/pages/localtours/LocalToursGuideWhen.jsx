@@ -1,6 +1,6 @@
 import GuideReasonsSection from "../../components/GuideSeasonsSection";
 
-function LocalToursGuide ( { className = "" }){
+function LocalToursGuideWhen ( { className = "" }){
 
 	return (
 		<GuideReasonsSection title="When to Hire a Guide" items={guideItems} className={className} />
@@ -35,4 +35,4 @@ const guideItems = [
   },
 ];
 
-export default LocalToursGuide;
+export default LocalToursGuideWhen;
