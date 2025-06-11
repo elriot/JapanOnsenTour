@@ -7,7 +7,7 @@ function TravelExtrasJapanese( { className = "" }) {
 			<JapanesePhraseTable
 				intro="When travelling to any new country, foreign languages can be intimidating. Here are some common Japanese phrases that will help you on your travel:"
 				phrases={phraseData1} 
-				className="page-content-text"
+				className="page-content-text pb-15"
 			/>
 			<JapanesePhraseTable 
 				intro="Here are some useful phrases to help you during your onsen stay:"
